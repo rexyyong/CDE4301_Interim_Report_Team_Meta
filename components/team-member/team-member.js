@@ -43,11 +43,6 @@ class TeamMember extends HTMLElement {
         margin: 8px 0;
       }
 
-      @media (max-width: 599px) {
-        img {
-          display: none;
-        }
-      }
     </style>
   `;
 
