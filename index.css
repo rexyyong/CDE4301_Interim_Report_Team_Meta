@@ -2,8 +2,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-family: var(--sl-font-sans);
+  /*font-size: 14px;
+  font-family: var(--sl-font-sans); */
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .content {
@@ -15,4 +17,11 @@ body {
 p {
   text-align: justify;
   font-size: 1.1rem;
+}
+
+image-component {
+  display: block;     /* Makes it behave like a block, so centering works */
+  max-width: 600px; /* Sets a MAXIMUM width (e.g., 700px). Adjust this value as you like. */
+  width: 100%;      /* Makes it responsive and shrink on smaller screens */
+  margin: 2rem auto;  /* Adds 2rem of space above/below and 'auto' centers it */
 }
