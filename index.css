@@ -10,8 +10,14 @@ body {
 
 .content {
   max-width: 800px;
-  margin: auto;
-  padding: 10%;
+  margin: 0 auto; /* THIS IS THE KEY! It centers the block */
+  padding: 24px;
+}
+
+/* === 3. MAIN CONTENT AREA === */
+/* === 3. MAIN CONTENT AREA === */
+.main-content {
+  margin-left: 300px; /* Pushes the whole container over */
 }
 
 p {
@@ -24,4 +30,64 @@ image-component {
   max-width: 600px; /* Sets a MAXIMUM width (e.g., 700px). Adjust this value as you like. */
   width: 100%;      /* Makes it responsive and shrink on smaller screens */
   margin: 2rem auto;  /* Adds 2rem of space above/below and 'auto' centers it */
+}
+
+
+/* === 2. SIDEBAR NAVIGATION === */
+.sidebar-nav {
+  height: 100%; /* Make sidebar full-height */
+  width: 300px; /* Set a fixed width for the sidebar */
+  position: fixed; /* Fix it to the side of the screen */
+  z-index: 10; /* Ensure it stays on top of other content */
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1; /* W3Schools light-grey style */
+  overflow-y: auto; /* Add a scrollbar if ToC is too long */
+  
+  /* Use box-sizing so padding is included in the 300px width */
+  box-sizing: border-box; 
+  padding: 20px;
+}
+
+/* === 4. MAKING IT NICER (Optional) === */
+/* This makes your Shoelace tree look more like a nav menu */
+.sidebar-nav h2 {
+  margin-top: 0;
+}
+
+.sidebar-nav sl-tree-item::part(item) {
+  padding-left: 0; /* Remove default Shoelace indentation */
+}
+
+.sidebar-nav sl-tree-item a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+}
+
+.sidebar-nav sl-tree-item a:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* === 5. RESPONSIVE (MOBILE) === */
+/* When screen is 900px wide or less */
+@media (max-width: 900px) {
+  .sidebar-nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  /* Update this rule */
+  .main-content {
+    margin-left: 0; /* Remove the margin */
+  }
+
+  /* Add this rule for mobile content */
+  .content {
+    padding: 16px;
+  }
 }
