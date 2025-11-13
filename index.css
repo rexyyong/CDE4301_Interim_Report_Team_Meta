@@ -72,22 +72,114 @@ image-component {
 }
 
 
+/* === 4B. HAMBURGER (Final Revision for Transparent Background with Highlighted Icon) === */
+#hamburger-btn {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  top: 15px; 
+  left: 15px;
+  z-index: 1001;
+  padding: 0; /* Remove default padding */
+  
+  /* Force the button's background to be transparent */
+  --sl-button-background-color: transparent;
+  --sl-button-background-color-hover: transparent;
+  --sl-button-background-color-focus: transparent;
+  --sl-button-border-color: transparent;
+  --sl-button-border-color-hover: transparent;
+  --sl-button-border-color-focus: transparent;
+  box-shadow: none !important; /* No shadow on the button itself */
+}
+
+/* Style the sl-icon component directly to create the background */
+#hamburger-btn sl-icon {
+  display: flex; /* Make it a flex container to center the icon */
+  align-items: center;
+  justify-content: center;
+  
+  width: 48px; /* Size of the visible circle */
+  height: 48px;
+  border-radius: 50%; /* Make it perfectly round */
+  
+  background-color: white; /* The background color of the circle */
+  color: #333; /* Color of the hamburger lines */
+  font-size: 1.5rem; /* Size of the hamburger lines icon */
+  
+  /* Add a subtle shadow to this white circle */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the base part of the Shoelace button is also transparent */
+#hamburger-btn::part(base) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.sidebar-overlay {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Below sidebar, above content */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* This class will be toggled by JavaScript */
+.sidebar-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+
 /* === 5. RESPONSIVE (MOBILE) === */
 /* When screen is 900px wide or less */
 @media (max-width: 900px) {
+  
+  /* 1. Show the hamburger button */
+  #hamburger-btn {
+    display: inline-flex; 
+  }
+
+  /* 2. Change the sidebar to be a hidden-by-default panel */
   .sidebar-nav {
-    width: 100%;
-    height: auto;
-    position: relative;
+    /* It's still fixed, but now it's off-screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Use the same fixed width */
+    height: 100%;
+    z-index: 1000;
+    
+    /* This hides it off the left side */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+
+    /* Add a shadow to look like a panel */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
   }
 
-  /* Update this rule */
+  /* 3. This class will be toggled by JS to slide it in */
+  .sidebar-nav.open {
+    transform: translateX(0);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  /* 4. The main content no longer needs a margin */
   .main-content {
-    margin-left: 0; /* Remove the margin */
+    margin-left: 0;
   }
 
-  /* Add this rule for mobile content */
   .content {
     padding: 16px;
   }
+}
+
+/* Add this new rule to hide the hamburger when it has the 'hidden' class */
+#hamburger-btn.hidden {
+  display: none !important;
 }

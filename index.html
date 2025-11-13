@@ -34,6 +34,11 @@
 </head>
 
 <body>
+  <sl-button variant="text" id="hamburger-btn">
+    <sl-icon name="list" label="Menu"></sl-icon>
+  </sl-button>
+
+  <div class="sidebar-overlay"></div>
     <div class="sidebar-nav">
     <div class="table-of-content">
       <h2>Table of Contents</h2>
@@ -1405,6 +1410,40 @@
 
   <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
   <script type="module" src="./components/table-component/table-component.js"></script>
+  <script>
+    // Wait for the page to load
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // Get all the elements we need
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const sidebar = document.querySelector('.sidebar-nav');
+      const overlay = document.querySelector('.sidebar-overlay');
+      const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+
+      // --- THIS FUNCTION IS UPDATED ---
+      // Function to open/close the sidebar
+      function toggleSidebar() {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('open');
+        hamburgerBtn.classList.toggle('hidden'); // This hides/shows the button
+      }
+
+      // 1. Click hamburger to open/close
+      hamburgerBtn.addEventListener('click', toggleSidebar);
+
+      // 2. Click overlay to close
+      overlay.addEventListener('click', toggleSidebar);
+
+      // 3. Click a link in the sidebar to close
+      sidebarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (sidebar.classList.contains('open')) {
+            toggleSidebar();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
