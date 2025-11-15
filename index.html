@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Stanford GEDI Team META</title>
+  <title>Project Title</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -39,8 +39,7 @@
   </sl-button>
 
   <div class="sidebar-overlay"></div>
-
-  <div class="sidebar-nav">
+    <div class="sidebar-nav">
     <div class="table-of-content">
       <h2>Table of Contents</h2>
       <sl-tree>
@@ -57,14 +56,14 @@
             <a href="#section-2-2-survey-data">2.2. Survey Data</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#section-2-3-problem-statement">2.3. Problem Statement</a>
+            <a href="#section-2-3-generation-of-needs-statement">2.3. Generation of Needs Statement</a>
           </sl-tree-item>
           <sl-tree-item>
             <a href="#section-2-4-synthesis-of-data">2.4. Synthesis of Data</a>
           </sl-tree-item>
         </sl-tree-item>
         <sl-tree-item expanded>
-          <a href="#section-3-supporting-the-elderly">3. Supporting the Elderly (Jonathan and Thulasidas)</a>
+          <a href="#section-3-supporting-the-elderly">3. Supporting the Elderly (Jonathan & Thulasidas)</a>
           <sl-tree-item>
             <a href="#section-3-1-problem-statement-for-the-elderly">3.1. Problem Statement for the Elderly</a>
           </sl-tree-item>
@@ -103,7 +102,7 @@
           <a href="#section-4-tackling-social-isolation">4. Tackling Social Isolation through Empowering Social
             Workers</a>
           <sl-tree-item>
-            <a href="#section-4-1-context-and-problem-statement">4.1. Context and Problem Statement for Social
+            <a href="#section-4-1-pretext-and-problem-statement">4.1. Pretext and Problem Statement for Social
               Workers (Maia)</a>
             <sl-tree-item>
               <a href="#section-4-1-1-role-of-social-workers">4.1.1. Role of Social Workers</a>
@@ -120,7 +119,13 @@
             <a href="#section-4-2-identifying-needs">4.2. Identifying Needs and Desired Outcomes of Social Workers
               (Rex)</a>
             <sl-tree-item>
-              <a href="#section-4-2-1-job-map">4.2.1. Job Map and Desired Outcomes of Social Workers</a>
+              <a href="#section-4-2-1-why-outcome-driven-innovation">4.2.1. Why the outcome-driven innovation approach</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-2-2-job-map">4.2.2. Job Map of Social Workers</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-2-3-filtering-of-outcomes">4.2.3. Filtering desired outcomes of social workers</a>
             </sl-tree-item>
           </sl-tree-item>
           <sl-tree-item>
@@ -188,14 +193,12 @@
         <sl-tree-item expanded>
           <a href="#appendix-f">Appendix F</a>
         </sl-tree-item>
-        <sl-tree-item expanded>
-          <a href="#appendix-g">Appendix G</a>
-        </sl-tree-item>
       </sl-tree>
     </div>
   </div>
-
+  <!-- <div class="content main-content"> -->
   <div class="main-content">
+
     <div class="content">
 
       <image-component tag="nus" source="assets/nus/NUS.jpg" subtitle="" style="max-width: 400px;"></image-component>
@@ -203,6 +206,7 @@
       <sl-divider></sl-divider>
 
       <h1>Meet the Students</h1>
+      <!-- This is the team member component use to display details about your team members -->
       <div class="team-member-wrapper">
         <team-member avatar="assets/our_photos/maia.jpg" name="Goh Nuoxu" department="Mechanical Engineering"
           year="2003"></team-member>
@@ -215,997 +219,1212 @@
       </div>
 
       <h1>Meet our Supervisors</h1>
+      <!-- This is the team member component use to display details about your team members -->
       <div class="team-member-wrapper">
-        <team-member avatar="assets/our_photos/khoo.jpg" name="Professor Khoo Eng Tat" department="NUS CDE"
-          year=""></team-member>
-        <team-member avatar="assets/our_photos/graham.jpg" name="Graham Zhu" department="NUS CDE"
-          year=""></team-member>
+        <team-member avatar="assets/our_photos/khoo.jpg" name="Professor Khoo Eng Tat" department="NUS CDE" year=""></team-member>
+        <team-member avatar="assets/our_photos/graham.jpg" name="Graham Zhu" department="NUS CDE" year=""></team-member>
       </div>
 
+      <!-- This is a divide from the shoelace library for aesthetic purpose -->
       <sl-divider></sl-divider>
 
+      <!-- Acknoledgements -->
       <h1>Acknowledgments</h1>
       <p>
-        We would like to express our sincere gratitude to Professor Khoo Eng Tat and our Teaching Assistant Graham Zhu
-        for their invaluable guidance and support throughout this project. Their expertise and insights have been
-        instrumental in shaping our approach and deepening our understanding of the challenges we aimed to address. We
-        also extend our thanks to all the professors, social workers, elderly participants, and community organizers
-        who generously shared their time and experiences with us. Their contributions were crucial in informing our
-        research and ensuring that our solutions were grounded in real-world needs. Finally, we appreciate the support
-        from the NUS-Stanford Global Engineering Design Innovation Programme for providing us with this opportunity to
-        collaborate and innovate.
+        We would like to express our sincere gratitude to Professor Khoo Eng Tat and our Teaching Assistant Graham Zhu for their invaluable
+        guidance and support throughout this project. Their expertise and insights have been instrumental in shaping our
+        approach and deepening our understanding of the challenges we aimed to address. We also extend our thanks to all
+        the professors, social workers, elderly participants, and community organizers who generously shared their time and
+        experiences with us. Their contributions were crucial in informing our research and ensuring that our solutions
+        were grounded in real-world needs. Finally, we appreciate the support from the NUS-Stanford Global Engineering
+        Design Innovation Programme for providing us with this opportunity to collaborate and innovate.
       </p>
 
       <sl-divider></sl-divider>
 
-      <div id="section-1-introduction">
-        <h2> 1. Introduction (Maia & Jonathan) </h2>
-        <p>
-          The NUS-Stanford Global Engineering Design Innovation Programme is a collaborative effort between the 2
-          universities, where project teams, together with an industry partner, work to solve a problem provided by
-          the industry partner. The prompt assigned to us is as follows: <strong>This project explores how smart
-            glasses, sensors, and AI can augment and enrich social interactions. Students should consider diverse user
-            groups to uncover unmet needs, then propose solutions that address those needs through the design of the
-            user experience and hardware/software capabilities.</strong>
-        </p>
-        <p>
-          Our team, under the guidance of our professor and advisor, Professor Khoo Eng Tat and Graham Zhu, started by
-          exploring many potential user groups. We then delved deeper into a select few with the most potential to
-          work on. Initial groups we explored included the visually-impaired, hearing-impaired and networking
-          professionals. After weeks of research and deliberation, we have decided to focus our efforts on the topic
-          of elderly loneliness, an increasingly prevalent problem around the world and in Singapore.
-        </p>
-        <p>
-          In 2023, the World Health Organisation declared loneliness a global public health concern [1]. Around the
-          world, countries have created task forces to tackle this issue specifically [2]. Japan and the United
-          Kingdom have established a new role called the Minister for Loneliness, which highlights the increased focus
-          that these countries are putting on addressing it [2]. In Singapore, about an average of 50% or more people
-          feel socially isolated and coupled with the ageing population, it puts a strain on our community to reach
-          out to the elderly and keep them engaged [3]. The truth of the matter is: the silver tsunami is
-          increasingly enveloping our populations and exacerbating this problem in the elderly.
-        </p>
-        <p>
-          Around 14.1% of the elderly above 70 live with a mental disorder, with one of the causes being social
-          isolation, with a staggering suicide rate of 16.6% [4]. They also experience health consequences such as
-          increased risk of developing Alzheimer’s disease.
-        </p>
-        <p>
-          Therefore, this project aims to create a new system using extended reality (XR) and artificial intelligence
-          (AI) to bridge the gap faced by the elderly when building and maintaining social interactions.
-        </p>
-      </div>
 
-      <div id="section-2-understanding-the-elderly-loneliness-problem">
-        <h2> 2. Understanding the Elderly Loneliness Problem (Thulasidas & Jonathan) </h2>
-      </div>
+      <!-- <div class="table-of-content">
+        <h2>Table of Contents</h2>
+        <sl-tree>
+          <sl-tree-item>
+            <a href="#section-1-introduction">1. Introduction (Maia & Jonathan)</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#section-2-understanding-the-elderly-loneliness-problem">2. Understanding the Elderly Loneliness
+              Problem (Thulasidas & Jonathan)</a>
+            <sl-tree-item>
+              <a href="#section-2-1-literature-review">2.1. Literature Review</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-2-2-survey-data">2.2. Survey Data</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-2-3-generation-of-needs-statement">2.3. Generation of Needs Statement</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-2-4-synthesis-of-data">2.4. Synthesis of Data</a>
+            </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#section-3-supporting-the-elderly">3. Supporting the Elderly (Jonathan and Thulasidas)</a>
+            <sl-tree-item>
+              <a href="#section-3-1-problem-statement-for-the-elderly">3.1. Problem Statement for the Elderly</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-2-elderly-needs">3.2. Elderly Needs</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-3-case-studies-on-ai-companions">3.3. Case Studies on AI Companions</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-4-development-of-concepts">3.4. Development of Concepts</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-5-critical-function-prototyping">3.5. Critical Function Prototyping</a>
+              <sl-tree-item>
+                <a href="#section-3-5-1-befriender-at-your-service">3.5.1. Befriender at Your Service</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-3-5-2-connecting-you">3.5.2. Connecting You</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-6-results">3.6. Results</a>
+              <sl-tree-item>
+                <a href="#section-3-6-1-befriender-at-your-service">3.6.1. Befriender at Your Service</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-3-6-2-connecting-you">3.6.2. Connecting You</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-3-7-refinement-of-concept">3.7. Refinement of Concept</a>
+            </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#section-4-tackling-social-isolation">4. Tackling Social Isolation through Empowering Social
+              Workers</a>
+            <sl-tree-item>
+              <a href="#section-4-1-pretext-and-problem-statement">4.1. Pretext and Problem Statement for Social
+                Workers (Maia)</a>
+              <sl-tree-item>
+                <a href="#section-4-1-1-role-of-social-workers">4.1.1. Role of Social Workers</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-1-2-current-gaps-faced">4.1.2. Current Gaps faced by Social Workers</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-1-3-problem-statement-for-social-worker">4.1.3. Problem Statement for Social
+                  Worker</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-2-identifying-needs">4.2. Identifying Needs and Desired Outcomes of Social Workers
+                (Rex)</a>
+              <sl-tree-item>
+                <a href="#section-4-2-1-job-map">4.2.1. Job Map and Desired Outcomes of Social Workers</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-3-concept-exploration">4.3. Concept Exploration for Underserved Outcomes of Social
+                Workers (Rex)</a>
+              <sl-tree-item>
+                <a href="#section-4-3-1-concepts-for-aiding">4.3.1. Concepts for Aiding Social Workers</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-3-2-trade-off-analysis">4.3.2. Trade-off Analysis</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-4-critical-experience-prototype">4.4. Critical Experience Prototype (CEP) (Rex)</a>
+              <sl-tree-item>
+                <a href="#section-4-4-1-formation-of-cep">4.4.1. Formation of CEP</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-4-2-results-of-cep">4.4.2. Results of CEP</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-4-3-post-cep-questionnaire">4.4.3. Post CEP Questionnaire Findings</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-4-4-conclusion-of-results">4.4.4. Conclusion of Results</a>
+              </sl-tree-item>
+              <sl-tree-item>
+                <a href="#section-4-4-5-shortcomings-of-results">4.4.5. Shortcomings of Results</a>
+              </sl-tree-item>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-5-future-refinement">4.5. Future Refinement of Concepts for Social Workers (Rex)</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-4-6-next-steps">4.6. Next Steps for Social Workers (Rex)</a>
+            </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#section-5-conclusion">5. Conclusion (All)</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#section-6-future-plans">6. Future Plans for the Project (Rex)</a>
+            <sl-tree-item>
+              <a href="#section-6-1-project-gantt-chart">6.1. Project Gantt Chart</a>
+            </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#references">7. References</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-a">Appendix A</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-b">Appendix B</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-c">Appendix C</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-d">Appendix D</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-e">Appendix E</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#appendix-f">Appendix F</a>
+          </sl-tree-item>
+        </sl-tree>
+      </div> -->
+      <!-- <sl-divider></sl-divider> -->
 
-      <div id="section-2-1-literature-review">
-        <h3>2.1. Literature Review</h3>
-        <p><strong>Social Isolation vs Loneliness</strong></p>
-        <p>
-          According to Puyane et al, social isolation refers to an objective lack of social contact, while loneliness
-          is the subjective experience of unmet social needs [5]. A study identified key factors contributing to
-          elderly loneliness, such as: being old, a widow/divorced, having a lower level of education and/or income,
-          living alone, having a chronic disease, poor self-perceived health, lack of visits by relatives or
-          acquaintances, dissatisfaction with the place of living, and being fully dependent while performing daily
-          activities [6].
-        </p>
-        <p>
-          What can be done to combat this? It turns out that having more frequent, more pleasant and in-person social
-          interactions, as well as interactions with friends and family specifically, significantly predicted lower
-          momentary loneliness a few hours later [7]. Additionally, home-based interventions were found to
-          significantly increase older adults’ social connectedness (social support and social engagement) and reduce
-          their loneliness and depressive symptoms; and interventions using mixed platforms were more favourable,
-          which include face-to-face and digital delivery [8].
-        </p>
-        <p><strong>Active ageing, Befriending, and Care and support in the Community model (ABC)</strong></p>
+      <div>
+        <div id="section-1-introduction">
+          <h2> 1. Introduction (Maia & Jonathan) </h2>
+          <p>
+            The NUS-Stanford Global Engineering Design Innovation Programme is a collaborative effort between the 2
+            universities, where project teams, together with an industry partner, work to solve a problem provided by
+            the industry partner. The prompt assigned to us is as follows: This project explores how smart glasses,
+            sensors, and AI can augment and enrich social interactions. Students should consider diverse user groups to
+            uncover unmet needs, then propose solutions that address those needs through the design of the user
+            experience and hardware/software capabilities.
+          </p>
+          <p>
+            Our team, under the guidance of our professor and advisor, Professor Khoo Eng Tat and Graham Zhu, started by
+            exploring many potential user groups. We then delved deeper into a select few with the most potential to
+            work on. Initial groups we explored included the visually-impaired, hearing-impaired and networking
+            professionals. After weeks of research and deliberation, we have decided to focus our efforts on the topic
+            of elderly loneliness, an increasingly prevalent problem around the world and in Singapore.
+          </p>
+          <p>
+            In 2023, the World Health Organisation declared loneliness a global public health concern [1]. Around the
+            world, countries have created task forces to tackle this issue specifically [2]. Japan and the United
+            Kingdom have established a new role called the Minister for Loneliness, which highlights the increased focus
+            that these countries are putting on addressing it [2]. In Singapore, about an average of 50% or more people
+            feel socially isolated and coupled with the ageing population, it puts a strain on our community to reach
+            out to the elderly and keep them engaged [3]. The truth of the matter is: the silver tsunami is
+            increasingly enveloping our populations and exacerbating this problem in the elderly.
+          </p>
+          <p>
+            Around 14.1% of the elderly above 70 live with a mental disorder, with one of the causes being social
+            isolation, with a staggering suicide rate of 16.6% [4]. They also experience health consequences such as
+            increased risk of developing Alzheimer’s disease.
+          </p>
+          <p>
+            Therefore, this project aims to create a new system using extended reality (XR) and artificial intelligence
+            (AI) to bridge the gap faced by the elderly when building and maintaining social interactions.
+          </p>
+        </div>
 
-        <image-component tag="fig-1" source="assets/figure/f1.png" subtitle="Figure 1: ABC Model"></image-component>
+        <div id="section-2-understanding-the-elderly-loneliness-problem">
+          <h2> 2. Understanding the Elderly Loneliness Problem (Thulasidas & Jonathan) </h2>
+        </div>
 
-        <p>
-          Singapore's strategy to combat social isolation employs the 'ABC' framework, which differentiates its
-          approach across a continuum of need: <strong>Active Ageing</strong> functions as the primary
-          <strong>preventive strategy</strong> for all older adults, promoting participation in social, cultural,
-          spiritual, and civic affairs to maintain overall health and quality of life, thereby stemming the initial
-          onset of isolation [9]. In contrast, <strong>Befriending</strong> is a <strong>targeted
-            intervention</strong> focusing on older people already identified as socially isolated, creating a
-          "<strong>purpose-built, one-on-one relationship</strong>" to provide direct companionship and fill the
-          social gap for those who lack a personal network [10], [11]. Finally, the <strong>Community</strong>
-          pillar, facilitated by groups such as Resident Networks and the People's Association, offers accessible
-          programs, such as fitness classes and arts and crafts sessions, that serve as supported group-based
-          environments to foster new social connections and encourage active engagement among seniors in their
-          neighbourhood [12].
-        </p>
-        <p><strong>Befriender Model Overview</strong></p>
-        <p>
-          As Singapore's traditional family structures evolve and fewer relatives live together, the societal need for
-          companionship services has grown, prompting social service agencies to complement their core programmes with
-          befriending [13], [14]. This service targets older adults who exhibit at least one of the four risk
-          factors: living alone, physical or cognitive impairment, limited social networks, or serving as a primary
-          caregiver. These factors reduce the daily social contact and emotional support that the individuals need.
-        </p>
-        <p>
-          In response, the Agency for Integrated Care (AIC) defines a befriender primarily as a companion who provides
-          sustained emotional support and cultivates meaningful social bonds. Through regular home visits and
-          conversations, befrienders work to reduce loneliness and encourage seniors to participate in activities
-          outside the home [14].
-        </p>
-        <p><strong>Gap in the Current Model</strong></p>
+        <div id="section-2-1-literature-review">
+          <h3>2.1. Literature Review</h3>
+          <p>
+            Social Isolation vs Loneliness
+          </p>
+          <p>
+            According to Puyane et al, social isolation refers to an objective lack of social contact, while loneliness
+            is the subjective experience of unmet social needs [5]. A study identified key factors contributing to
+            elderly loneliness, such as: being old, a widow/divorced, having a lower level of education and/or income,
+            living alone, having a chronic disease, poor self-perceived health, lack of visits by relatives or
+            acquaintances, dissatisfaction with the place of living, and being fully dependent while performing daily
+            activities [6].
+          </p>
+          <p>
+            What can be done to combat this? It turns out that having more frequent, more pleasant and in-person social
+            interactions, as well as interactions with friends and family specifically, significantly predicted lower
+            momentary loneliness a few hours later [7]. Additionally, home-based interventions were found to
+            significantly increase older adults’ social connectedness (social support and social engagement) and reduce
+            their loneliness and depressive symptoms; and interventions using mixed platforms were more favourable,
+            which include face-to-face and digital delivery [8].
+          </p>
+          <p>
+            Active ageing, Befriending, and Care and support in the Community model (ABC)
+          </p>
+          <image-component tag="fig-1" source="assets/figure/f1.png" subtitle="Figure 1: ABC Model"></image-component>
+          <p>
+            Singapore's strategy to combat social isolation employs the 'ABC' framework, which differentiates its
+            approach across a continuum of need: <strong>Active Ageing</strong> functions as the primary
+            <strong>preventive strategy</strong> for all older adults, promoting participation in social, cultural,
+            spiritual, and civic affairs to maintain overall health and quality of life, thereby stemming the initial
+            onset of isolation [9]. In contrast, <strong>Befriending</strong> is a <strong>targeted
+              intervention</strong> focusing on older people already identified as socially isolated, creating a
+            "<strong>purpose-built, one-on-one relationship</strong>" to provide direct companionship and fill the social
+            gap for those who lack a personal network [10], [11]. Finally, the <strong>Community</strong> pillar,
+            facilitated by groups such as Resident Networks and the People's Association, offers accessible programs,
+            such as fitness classes and arts and crafts sessions, that serve as supported group-based environments to
+            foster new social connections and encourage active engagement among seniors in their neighbourhood [12].
+          </p>
+          <p>
+            Befriender Model Overview
+          </p>
+          <p>
+            As Singapore's traditional family structures evolve and fewer relatives live together, the societal need for
+            companionship services has grown, prompting social service agencies to complement their core programmes
+            with befriending [13], [14]. This service targets older adults who exhibit at least one of the four risk
+            factors: living alone, physical or cognitive impairment, limited social networks, or serving as a primary
+            caregiver. These factors reduce the daily social contact and emotional support that the individuals need.
+          </p>
+          <p>
+            In response, the Agency for Integrated Care (AIC) defines a befriender primarily as a companion who provides
+            sustained emotional support and cultivates meaningful social bonds. Through regular home visits and
+            conversations, befrienders work to reduce loneliness and encourage seniors to participate in activities
+            outside the home [14].
+          </p>
+          <p>
+            Gap in the Current Model
+          </p>
+          <image-component tag="fig-2" source="assets/figure/f2.png"
+            subtitle="Figure 2: Gaps in the Befriending model"></image-component>
+          <p>
+            Current befriending services face a twofold crisis in logistics and design. Agencies struggle to recruit and
+            retain volunteers for long-term commitments because the model requires frequent visits, such as twice
+            weekly over six months or longer, and few people can sustain this level of involvement [15]. Turnover
+            matters because isolated seniors need time and a steady presence to build trust, and for many, consistency
+            is not a preference but a source of personal security. Knowing that someone will reliably visit or call
+            creates perceived dependability, which is important for befriending to be successful [16].
+          </p>
+          <p>
+            Despite these operational challenges, research on the befriending model often shows weak and inconsistent
+            long-term effectiveness [17]. This failure stems from a disconnect between the service's design and what
+            seniors actually value [17].
+          </p>
+          <p>
+            Practitioners report that the loneliest seniors do not want a random visitor; they want a genuine
+            connection with peers who share similar backgrounds and life experiences [13]. Research shows that
+            effective befriending does not happen by chance and depends on activating specific mechanisms that current
+            models often ignore [17]. The mechanisms include empathy, reciprocity and autonomy. Shared experience
+            generates empathy, for example, when a befriender and a senior both live with arthritis. Shared
+            characteristics foster reciprocity, enabling volunteers and users to form mutual two-way relationships.
+            Long-term flexible relationships support autonomy, while rigid, predefined priorities do not. To be
+            effective, programmes must therefore prioritise deliberate matching and sustained relationships.
+          </p>
+          <p>
+            In summary, the current befriending model fails because it is built on a "buddy" system of random,
+            high-turnover volunteers, while the loneliest seniors need consistent, peer-to-peer connections to feel
+            secure and understood.
+          </p>
+        </div>
 
-        <image-component tag="fig-2" source="assets/figure/f2.png"
-          subtitle="Figure 2: Gaps in the Befriending model"></image-component>
+        <div id="section-2-2-survey-data">
+          <h3>2.2. Survey Data</h3>
+          <p>
+            We started our journey by interviewing diverse stakeholders, including academics, social workers, startup
+            founders and community organisers from the People’s Association and Active Ageing Centres to gain a deeper
+            understanding of social isolation. We also gathered direct user insights from the elderly through a card
+            sorting activity.
+          </p>
+          <p>
+            With the insights tabulated in <a href="https://miro.com/app/board/uXjVJAMZw-E=/">Miro</a>, we identified
+            categories of needs that could be broadly classified under social interactions, successful interactions,
+            autonomy, training and support for workers, cognitive stimulation, and cultural stigma. From these
+            categories, we developed broad-level need statements.
+          </p>
+          <image-component tag="fig-3" source="assets/figure/f3.png" subtitle="Figure 3: Miro insights"></image-component>
+          <image-component tag="fig-4" source="assets/figure/f4.png" subtitle="Figure 4: Miro insights"></image-component>
+        </div>
 
-        <p>
-          Current befriending services face a twofold crisis in logistics and design. Agencies struggle to recruit and
-          retain volunteers for long-term commitments because the model requires frequent visits, such as twice weekly
-          over six months or longer, and few people can sustain this level of involvement [15]. Turnover matters
-          because isolated seniors need time and a steady presence to build trust, and for many, consistency is not a
-          preference but a source of personal security. Knowing that someone will reliably visit or call creates
-          perceived dependability, which is important for befriending to be successful [16].
-        </p>
-        <p>
-          Despite these operational challenges, research on the befriending model often shows weak and inconsistent
-          long-term effectiveness [17]. This failure stems from a disconnect between the service's design and what
-          seniors actually value [17].
-        </p>
-        <p>
-          Practitioners report that the loneliest seniors do not want a random visitor; they want a genuine connection
-          with peers who share similar backgrounds and life experiences [13]. Research shows that effective
-          befriending does not happen by chance and depends on activating specific mechanisms that current models
-          often ignore [17]. The mechanisms include empathy, reciprocity and autonomy. Shared experience generates
-          empathy, for example, when a befriender and a senior both live with arthritis. Shared characteristics foster
-          reciprocity, enabling volunteers and users to form mutual two-way relationships. Long-term flexible
-          relationships support autonomy, while rigid, predefined priorities do not. To be effective, programmes must
-          therefore prioritise deliberate matching and sustained relationships.
-        </p>
-        <p>
-          In summary, the current befriending model fails because it is built on a "buddy" system of random,
-          high-turnover volunteers, while the loneliest seniors need consistent, peer-to-peer connections to feel
-          secure and understood.
-        </p>
-      </div>
+        <div id="section-2-3-generation-of-needs-statement">
+          <h3>2.3. Generation of Needs Statement</h3> 
+          <table-component subtitle="">
+            <div id="table-needs-statements"></div>
+          </table-component>
+        </div>
 
-      <div id="section-2-2-survey-data">
-        <h3>2.2. Survey Data</h3>
-        <p>
-          We started our journey by interviewing diverse stakeholders, including academics, social workers, startup
-          founders and community organisers from the People’s Association and Active Ageing Centres to gain a deeper
-          understanding of social isolation. We also gathered direct user insights from the elderly through a card
-          sorting activity.
-        </p>
-        <p>
-          With the insights tabulated in <a href="https://miro.com/app/board/uXjVJAMZw-E=/">Miro</a>, we identified
-          categories of needs that could be broadly classified under social interactions, successful interactions,
-          autonomy, training and support for workers, cognitive stimulation, and cultural stigma. From these
-          categories, we developed broad-level need statements.
-        </p>
-        <image-component tag="fig-3" source="assets/figure/f3.png" subtitle="Figure 3: Miro insights"></image-component>
-        <image-component tag="fig-4" source="assets/figure/f4.png" subtitle="Figure 4: Miro insights"></image-component>
-      </div>
-
-      <div id="section-2-3-problem-statement">
-        <h3>2.3. Problem Statement</h3>
-        <p>
-          Socially isolated elderly in Singapore need reliable, long-term companionship to reduce loneliness and
-          preserve their overall well-being. Existing befriending models fail to deliver sustained, well-matched
-          relationships due to volunteer shortages and the short-term matching of random volunteers who do not meet
-          the needs of the elderly.
-        </p>
-      </div>
-
-      <div id="section-2-4-synthesis-of-data">
-        <h3>2.4. Synthesis of Data</h3>
-        <image-component tag="fig-5" source="assets/figure/f5.png" subtitle="Figure 5: Two-pronged Approach"
-          style="max-width: 300px;"></image-component>
-        <p>
-          Drawing on our primary and secondary research, we adopt a two-pronged approach to address elderly
-          loneliness. First, we support older adults in leading more connected lives through technology and human
-          networks. Given persistent manpower shortages, the current befriender model cannot reliably deliver
-          sustained companionship; technology can complement it and reduce reliance on volunteers.
-        </p>
-        <p>
-          Second, we empower social workers to deliver more timely, personalised support. Heavy caseloads and
-          administrative burden constrain service quality. Hence, by streamlining workflows and providing decision
-          support, social workers can devote more time to high-value interactions that help seniors reconnect with
-          the community.
-        </p>
+        <div id="section-2-4-synthesis-of-data">
+          <h3>2.4. Synthesis of Data</h3>
+          <image-component tag="fig-5" source="assets/figure/f5.png" subtitle="Figure 5: Two-pronged Approach" style="max-width: 300px;"></image-component>
+          <p>
+            Drawing on our primary and secondary research, we adopt a two-pronged approach to address elderly
+            loneliness. First, we support older adults in leading more connected lives through technology and human
+            networks. Given persistent manpower shortages, the current befriender model cannot reliably deliver
+            sustained companionship; technology can complement it and reduce reliance on volunteers.
+          </p>
+          <p>
+            Second, we empower social workers to deliver more timely, personalised support. Heavy caseloads and
+            administrative burden constrain service quality. Hence, by streamlining workflows and providing decision
+            support, social workers can devote more time to high-value interactions that help seniors reconnect with
+            the community.
+          </p>
+        </div>
       </div>
 
       <br />
       <br />
       <sl-divider></sl-divider>
+      <div>
+        <div id="section-3-supporting-the-elderly">
+          <h2>3. Supporting the Elderly (Jonathan & Thulasidas)</h2>
+          <p>
+            In this section, we will explore the concepts related to the elderly (above age 65) that can address the
+            gaps identified in the previous section.
+          </p>
+        </div>
 
-      <div id="section-3-supporting-the-elderly">
-        <h2>3. Supporting the Elderly (Jonathan and Thulasidas)</h2>
-        <p>
-          In this section, we will explore the concepts related to the elderly (above age 65) that can address the
-          gaps identified in the previous section.
-        </p>
-      </div>
+        <div id="section-3-1-problem-statement-for-the-elderly">
+          <h3>3.1. Problem Statement for the Elderly</h3>
+          <p>
+            Socially isolated elderly in Singapore need reliable, long-term companionship to reduce loneliness and
+            preserve their overall well-being. Existing befriending models fail to deliver sustained, well-matched
+            relationships due to volunteer shortages and the short-term matching of random volunteers who do not meet
+            the needs of the elderly.
+          </p>
+        </div>
 
-      <div id="section-3-1-problem-statement-for-the-elderly">
-        <h3>3.1. Problem Statement for the Elderly</h3>
-        <p>
-          Socially isolated elderly in Singapore need reliable, long-term companionship to reduce loneliness and
-          preserve their overall well-being. Existing befriending models fail to deliver sustained, well-matched
-          relationships due to volunteer shortages and the short-term matching of random volunteers who do not meet
-          the needs of the elderly.
-        </p>
-      </div>
+        <div id="section-3-2-elderly-needs">
+          <h3>3.2. Elderly Needs</h3>
+          <p>
+            To address the problem statement, the solution must address the following elderly needs:
+          </p>
+          <ol>
+            <li>Elderly users need a non-judgmental space where they can express views and emotions without criticism or
+              stigma. </li>
+            <li>Elderly users need companionship access that is consistently available when they reach out. </li>
+            <li>Elderly users need an interaction channel that is accessible and intuitive for low digital-literacy
+              users and those with sensory or motor limitations.</li>
+          </ol>
+        </div>
 
-      <div id="section-3-2-elderly-needs">
-        <h3>3.2. Elderly Needs</h3>
-        <p>
-          To address the problem statement, the solution must address the following elderly needs:
-        </p>
-        <ol>
-          <li>Elderly users need a non-judgmental space where they can express views and emotions without criticism or
-            stigma.</li>
-          <li>Elderly users need companionship access that is consistently available when they reach out.</li>
-          <li>Elderly users need an interaction channel that is accessible and intuitive for low digital-literacy
-            users and those with sensory or motor limitations.</li>
-        </ol>
-      </div>
+        <div id="section-3-3-case-studies-on-ai-companions">
+          <h3>3.3. Case Studies on AI Companions</h3>
+          <p>
+            A two-week ChatGPT intervention with 20 older adults reduced the proportion scoring above the UCLA
+            loneliness threshold of 43, a high degree of loneliness, from 100% to 32%. Participants attributed this
+            change to the system’s constant availability and perceived dependability, noting that <strong>“ChatGPT is
+              always there to chat with me, no matter the time or day.”</strong>
+          </p>
+          <p>
+            They valued the AI’s ability to hold context-rich conversations across social, recreational and
+            informational topics, saying <strong>“I liked that ChatGPT could talk about a lot of different things, from
+              the weather to my favourite TV shows,”</strong> and they described most interactions as social,
+            recreational, educational or emotional in nature [18].
+          </p>
+          <p>
+            Users also highlighted practical benefits, including instant information retrieval, calendar management and
+            medication reminders, and they said the AI’s patient, non-judgmental responses encouraged disclosure and
+            emotional sharing. Several participants called the system a confidant, reporting that <strong>“it
+              understands me in ways that no one else can,”</strong> and many summed up the experience with,
+            <strong>“It’s comforting to know that there is someone who listens and understands, even if it’s an
+              AI.”</strong> Together, these findings show that consistent availability, empathetic tone, contextual
+            knowledge and being an easy information source combine to produce meaningful companionship and measurable
+            reductions in loneliness [18].
+          </p>
+          <p>
+            A six-month pilot of an Alexa AI assistant with 105 homebound older adults produced a mean reduction of
+            10.87 points on the UCLA Loneliness Scale, offering a real-world benchmark for medium-term impact [19]. The
+            device functioned as a companion, facilitating communication with family and friends and providing
+            practical support such as medication and appointment reminders, suggesting that conversational presence
+            combined with task assistance can improve both social connectedness and day-to-day functioning [19].
+          </p>
+          <p>
+            With the research being positive on the use of chatbots to alleviate the perception of loneliness the next
+            promising direction include prioritising low-friction delivery, such as TV and natural speech or gesture
+            interfaces to maximise uptake, leveraging AI’s always-on availability to provide consistent perceived
+            dependability that builds trust, and using proactive but tunable nudges to increase engagement while
+            monitoring intrusion [20],[21].
+          </p>
+          <p>
+            This gap creates a clear design space for alternative solutions that reliably deliver consistent,
+            judgment-free social contact that the elderly can relate to, which could potentially nudge them to carry
+            out activities that reduce social isolation.
+          </p>
+        </div>
 
-      <div id="section-3-3-case-studies-on-ai-companions">
-        <h3>3.3. Case Studies on AI Companions</h3>
-        <p>
-          A two-week ChatGPT intervention with 20 older adults reduced the proportion scoring above the UCLA
-          loneliness threshold of 43, a high degree of loneliness, from 100% to 32%. Participants attributed this
-          change to the system’s constant availability and perceived dependability, noting that <strong>“ChatGPT is
-            always there to chat with me, no matter the time or day.”</strong>
-        </p>
-        <p>
-          They valued the AI’s ability to hold context-rich conversations across social, recreational and
-          informational topics, saying <strong>“I liked that ChatGPT could talk about a lot of different things,
-            from the weather to my favourite TV shows,”</strong> and they described most interactions as social,
-          recreational, educational or emotional in nature [18].
-        </p>
-        <p>
-          Users also highlighted practical benefits, including instant information retrieval, calendar management and
-          medication reminders, and they said the AI’s patient, non-judgmental responses encouraged disclosure and
-          emotional sharing. Several participants called the system a confidant, reporting that <strong>“it
-            understands me in ways that no one else can,”</strong> and many summed up the experience with, <strong>“It’s
-            comforting to know that there is someone who listens and understands, even if it’s an AI.”</strong>
-          Together, these findings show that consistent availability, empathetic tone, contextual knowledge and being
-          an easy information source combine to produce meaningful companionship and measurable reductions in
-          loneliness [18].
-        </p>
-        <p>
-          A six-month pilot of an Alexa AI assistant with 105 homebound older adults produced a mean reduction of
-          10.87 points on the UCLA Loneliness Scale, offering a real-world benchmark for medium-term impact [19].
-          The device functioned as a companion, facilitating communication with family and friends and providing
-          practical support such as medication and appointment reminders, suggesting that conversational presence
-          combined with task assistance can improve both social connectedness and day-to-day functioning [19].
-        </p>
-        <p>
-          With the research being positive on the use of chatbots to alleviate the perception of loneliness the next
-          promising direction include prioritising low-friction delivery, such as TV and natural speech or gesture
-          interfaces to maximise uptake, leveraging AI’s always-on availability to provide consistent perceived
-          dependability that builds trust, and using proactive but tunable nudges to increase engagement while
-          monitoring intrusion [20],[21].
-        </p>
-        <p>
-          This gap creates a clear design space for alternative solutions that reliably deliver consistent,
-          judgment-free social contact that the elderly can relate to, which could potentially nudge them to carry out
-          activities that reduce social isolation.
-        </p>
-      </div>
+        <div id="section-3-4-development-of-concepts">
+          <h3>3.4. Development of Concepts</h3>
+          <p>
+            From the previous section, conversational AI can help alleviate loneliness among older adults. When paired
+            with the hands-free interface of AR glasses, this approach can significantly reduce the friction in user
+            interaction. Building on this idea, we propose two concepts designed to address the companionship gap faced
+            by socially isolated elderly individuals.
+          </p>
+          <image-component tag="fig-6" source="assets/figure/f6.png" style="max-width: 300px; width: 100%"
+            subtitle="Figure 6: A visual illustration of Befriender at Your Service (Generated using Gemini)"></image-component>
+          <ol>
+            <li><strong>Befriender at Your Service:</strong> This concept envisions AR glasses equipped with a familiar
+              avatar and a conversational AI tailored to the needs of older adults. The system sustains companionship
+              by proactively initiating check-ins, recalling past conversations and personal preferences. The AI will
+              employ non-judgmental, validation-oriented language to ensure users feel heard and respected. Its
+              always-on availability and predictable interaction cadence offer a stable alternative to volunteer
+              befrienders, helping mitigate the inconsistencies of current models. The interface prioritises
+              accessibility through hands-free, low-friction controls, making it suitable for users with limited
+              technological familiarity or physical impairments. </li>
+          </ol>
+          <image-component tag="fig-7" source="assets/figure/f7.png" style="max-width: 300px; width: 100%"
+            subtitle="Figure 7: A visual illustration of Connecting You (Generated using Gemini)"></image-component>
+          <ol start="2">
+            <li><strong>Connecting You:</strong> This concept features an AR heads-up display that highlights a curated
+              list of close contacts, alongside real-time availability indicators. Users can initiate a voice or video
+              call with a single spoken command, reducing the uncertainty and hesitation associated with interrupting
+              others. By removing technical barriers, such as navigating apps or contact lists, the system streamlines
+              the connection process. Additionally, the interface will show nearby social activities aligned with the
+              user’s interests, along with one-command RSVP and navigation functions. This reduces cognitive load and
+              bridges the gap between event discovery and participation, promoting more frequent and meaningful social
+              engagement.</li>
+          </ol>
+        </div>
 
-      <div id="section-3-4-development-of-concepts">
-        <h3>3.4. Development of Concepts</h3>
-        <p>
-          From the previous section, conversational AI can help alleviate loneliness among older adults. When paired
-          with the hands-free interface of AR glasses, this approach can significantly reduce the friction in user
-          interaction. Building on this idea, we propose two concepts designed to address the companionship gap faced
-          by socially isolated elderly individuals.
-        </p>
+        <div id="section-3-5-critical-function-prototyping">
+          <h3>3.5. Critical Function Prototyping</h3>
+          <p>
+            To evaluate the effectiveness of our concepts, we conducted critical function prototyping for both ideas.
+            For Befriender at Your Service, we tested whether a conversational AI could sustain natural and engaging
+            dialogue with elderly users. For Connecting You, we assessed whether real-time visibility of loved ones’
+            availability would encourage more frequent user-initiated contact.
+          </p>
+        </div>
 
-        <image-component tag="fig-6" source="assets/figure/f6.png" style="max-width: 300px; width: 100%"
-          subtitle="Figure 6: A visual illustration of Befriender at Your Service (Generated using Gemini)"></image-component>
+        <div id="section-3-5-1-befriender-at-your-service">
+          <h4>3.5.1. Befriender at Your Service</h4>
+          <image-component tag="fig-8" source="assets/figure/f8.png" style="max-width: 400px; width: 100%"
+            subtitle="Figure 8: Testing of AI Companion with an Elderly"></image-component>
+          <p>
+            We tested three conversational AI models—ChatGPT, Gemini, and Claude—with elderly participants using an iPad
+            interface. Each session lasted 1 hour, with each model being tested for 20 minutes, during which we
+            recorded the following metrics:
+          </p>
+          <ol>
+            <li>Number of conversation interruptions/drop-offs </li>
+            <li>Number of misunderstandings by AI/user during the conversation </li>
+            <li>Ratio of AI-to-user speaking time </li>
+            <li>Number of times the user laughed/smiled (used as a proxy for engagement and enjoyment)</li>
+          </ol>
+          <p>
+            To ensure consistency of the experiment, we prompted the AI based on what makes a good befriender: “You are
+            a compassionate befriender speaking with an older adult in Singapore. Listen, validate, and keep the
+            conversation going. Speak at a moderate pace. Use simple, open-ended questions and let the person finish
+            before you respond. Be empathetic and match their pace and vocabulary. Ask gentle follow-up questions that
+            invite storytelling, and encourage softly if they hesitate. Avoid judging, lecturing, or arguing. If they
+            mention harm, severe distress, or a medical emergency, escalate to a human contact. Keep replies brief and
+            wait for their response.” [22].
+          </p>
+        </div>
 
-        <ol>
-          <li><strong>Befriender at Your Service:</strong> This concept envisions AR glasses equipped with a familiar
-            avatar and a conversational AI tailored to the needs of older adults. The system sustains companionship by
-            proactively initiating check-ins, recalling past conversations and personal preferences. The AI will
-            employ non-judgmental, validation-oriented language to ensure users feel heard and respected. Its
-            always-on availability and predictable interaction cadence offer a stable alternative to volunteer
-            befrienders, helping mitigate the inconsistencies of current models. The interface prioritises
-            accessibility through hands-free, low-friction controls, making it suitable for users with limited
-            technological familiarity or physical impairments.</li>
-        </ol>
+        <div id="section-3-5-2-connecting-you">
+          <h4>3.5.2. Connecting You</h4>
+          <p>
+            To evaluate the effectiveness of displaying loved ones’ availability, we conducted a two-day experiment
+            with an elderly participant. On Day 1, we recorded the baseline number of calls made. On Day 2, we
+            introduced the Connecting You prototype by displaying a real-time availability indicator on an iPad
+            positioned beside the living room television, where the elderly will frequently walk past.
+          </p>
+          <p>
+            The status of loved ones was updated manually via a shared Google Sheet, enabling family members to reflect
+            their availability in real-time. Throughout the day, we tracked both the number of calls made and the
+            number of passive interactions with the iPad (e.g., glances, touches) to gauge the user's level of
+            engagement with the display.
+          </p>
+          <image-component tag="fig-9" source="assets/figure/f9.png" style="max-width: 400px; width: 100%"
+            subtitle="Figure 9: Display of the Real-time Availability Indicator"></image-component>
+          <p>
+            This setup aimed to test whether easy access to live availability information could lower social hesitation
+            and increase the likelihood of initiating contact.
+          </p>
+        </div>
 
-        <image-component tag="fig-7" source="assets/figure/f7.png" style="max-width: 300px; width: 100%"
-          subtitle="Figure 7: A visual illustration of Connecting You (Generated using Gemini)"></image-component>
+        <div id="section-3-6-results">
+          <h3>3.6. Results</h3>
+        </div>
 
-        <ol start="2">
-          <li><strong>Connecting You:</strong> This concept features an AR heads-up display that highlights a curated
-            list of close contacts, alongside real-time availability indicators. Users can initiate a voice or video
-            call with a single spoken command, reducing the uncertainty and hesitation associated with interrupting
-            others. By removing technical barriers, such as navigating apps or contact lists, the system streamlines
-            the connection process. Additionally, the interface will show nearby social activities aligned with the
-            user’s interests, along with one-command RSVP and navigation functions. This reduces cognitive load and
-            bridges the gap between event discovery and participation, promoting more frequent and meaningful social
-            engagement.</li>
-        </ol>
-      </div>
-
-      <div id="section-3-5-critical-function-prototyping">
-        <h3>3.5. Critical Function Prototyping</h3>
-        <p>
-          To evaluate the effectiveness of our concepts, we conducted critical function prototyping for both ideas.
-          For Befriender at Your Service, we tested whether a conversational AI could sustain natural and engaging
-          dialogue with elderly users. For Connecting You, we assessed whether real-time visibility of loved ones’
-          availability would encourage more frequent user-initiated contact.
-        </p>
-      </div>
-
-      <div id="section-3-5-1-befriender-at-your-service">
-        <h4>3.5.1. Befriender at Your Service</h4>
-        <image-component tag="fig-8" source="assets/figure/f8.png" style="max-width: 400px; width: 100%"
-          subtitle="Figure 8: Testing of AI Companion with an Elderly"></image-component>
-        <p>
-          We tested three conversational AI models—ChatGPT, Gemini, and Claude—with elderly participants using an iPad
-          interface. Each session lasted 1 hour, with each model being tested for 20 minutes, during which we recorded
-          the following metrics:
-        </p>
-        <ol>
-          <li>Number of conversation interruptions/drop-offs</li>
-          <li>Number of misunderstandings by AI/user during the conversation</li>
-          <li>Ratio of AI-to-user speaking time</li>
-          <li>Number of times the user laughed/smiled (used as a proxy for engagement and enjoyment)</li>
-        </ol>
-        <p>
-          To ensure consistency of the experiment, we prompted the AI based on what makes a good befriender: “You are
-          a compassionate befriender speaking with an older adult in Singapore. Listen, validate, and keep the
-          conversation going. Speak at a moderate pace. Use simple, open-ended questions and let the person finish
-          before you respond. Be empathetic and match their pace and vocabulary. Ask gentle follow-up questions that
-          invite storytelling, and encourage softly if they hesitate. Avoid judging, lecturing, or arguing. If they
-          mention harm, severe distress, or a medical emergency, escalate to a human contact. Keep replies brief and
-          wait for their response.” [22].
-        </p>
-      </div>
-
-      <div id="section-3-5-2-connecting-you">
-        <h4>3.5.2. Connecting You</h4>
-        <p>
-          To evaluate the effectiveness of displaying loved ones’ availability, we conducted a two-day experiment with
-          an elderly participant. On Day 1, we recorded the baseline number of calls made. On Day 2, we introduced
-          the Connecting You prototype by displaying a real-time availability indicator on an iPad positioned beside
-          the living room television, where the elderly will frequently walk past.
-        </p>
-        <p>
-          The status of loved ones was updated manually via a shared Google Sheet, enabling family members to reflect
-          their availability in real-time. Throughout the day, we tracked both the number of calls made and the number
-          of passive interactions with the iPad (e.g., glances, touches) to gauge the user's level of engagement with
-          the display.
-        </p>
-        <image-component tag="fig-9" source="assets/figure/f9.png" style="max-width: 400px; width: 100%"
-          subtitle="Figure 9: Display of the Real-time Availability Indicator"></image-component>
-        <p>
-          This setup aimed to test whether easy access to live availability information could lower social hesitation
-          and increase the likelihood of initiating contact.
-        </p>
-      </div>
-
-      <div id="section-3-6-results">
-        <h3>3.6. Results</h3>
-      </div>
-
-      <div id="section-3-6-1-befriender-at-your-service">
-        <h4>3.6.1. Befriender at Your Service</h4>
-        <p>
-          User testing for Befriender at Your Service yielded promising insights into the elderly’s receptiveness to
-          AI-mediated conversations. All three participants described the AI as “easy to talk to” and appreciated its
-          consistently polite and patient tone. They valued having someone to converse with on their own terms,
-          without fear of judgment. Even though they knew the AI was not human, it offered a sense of companionship,
-          making them feel “entertained and heard.”.
-        </p>
-        <p>
-          The AI has also demonstrated practical utility. In one example, a participant asked where to learn
-          pickleball. The AI responded with a list of nearby facilities, and the participant remarked that this was
-          helpful because he "would not have known how to search those on the internet." This highlights the AI’s
-          potential to bridge digital literacy gaps and provide accessible information in real time.
-        </p>
-
-        <image-component tag="table-1" source="assets/table/t1.jpg"
+        <div id="section-3-6-1-befriender-at-your-service">
+          <h4>3.6.1. Befriender at Your Service</h4>
+          <p>
+            User testing for Befriender at Your Service yielded promising insights into the elderly’s receptiveness to
+            AI-mediated conversations. All three participants described the AI as “easy to talk to” and appreciated its
+            consistently polite and patient tone. They valued having someone to converse with on their own terms,
+            without fear of judgment. Even though they knew the AI was not human, it offered a sense of companionship,
+            making them feel “entertained and heard.”.
+          </p>
+          <p>
+            The AI has also demonstrated practical utility. In one example, a participant asked where to learn
+            pickleball. The AI responded with a list of nearby facilities, and the participant remarked that this was
+            helpful because he "would not have known how to search those on the internet." This highlights the AI’s
+            potential to bridge digital literacy gaps and provide accessible information in real time.
+          </p>
+          <image-component tag="table-1" source="assets/table/t1.jpg" 
           subtitle="Table 1: Quantitative results from Befriender at Your Service Experiment"></image-component>
+          <p>
+            Quantitative findings (see Table 1) revealed key areas for improvement:
+          </p>
+          <ul>
+            <li>Interruption vs. Enjoyment: A negative correlation was observed between the number of conversation
+              interruptions and user enjoyment (measured by laughter/smiles). Interruptions often occurred when the
+              elderly spoke before the AI finished, leading to awkward pauses and inevitably causing the conversation to
+              break down. Claude AI had the fewest interruptions due to its push-to-send interface, which reduced
+              accidental input from background noise—a common issue with ChatGPT and Gemini, which rely on continuous
+              voice detection.</li>
+            <li>Misunderstanding vs. Enjoyment: Fewer misunderstandings also corresponded with higher engagement. AIs
+              often struggled to interpret local expressions or Singlish, which limited their ability to maintain
+              shared context. Participants noted that these moments made them feel “less understood” or “distant” from
+              the AI.
+            </li>
+            <li>Turn-taking Dynamics: Participants reported that the AI sometimes “talked too much,” creating an
+              unnatural conversation flow. Long monologues from the AI made them feel like they were waiting for their
+              turn, which contradicted typical human conversational patterns where interruptions or overlaps are common.
+            </li>
+          </ul>
+        </div>
 
-        <p>
-          Quantitative findings (see Table 1) revealed key areas for improvement:
-        </p>
-        <ul>
-          <li><strong>Interruption vs. Enjoyment:</strong> A negative correlation was observed between the number of
-            conversation interruptions and user enjoyment (measured by laughter/smiles). Interruptions often occurred
-            when the elderly spoke before the AI finished, leading to awkward pauses and inevitably causing the
-            conversation to break down. Claude AI had the fewest interruptions due to its push-to-send interface,
-            which reduced accidental input from background noise—a common issue with ChatGPT and Gemini, which rely on
-            continuous voice detection.</li>
-          <li><strong>Misunderstanding vs. Enjoyment:</strong> Fewer misunderstandings also corresponded with higher
-            engagement. AIs often struggled to interpret local expressions or Singlish, which limited their ability to
-            maintain shared context. Participants noted that these moments made them feel “less understood” or
-            “distant” from the AI.</li>
-          <li><strong>Turn-taking Dynamics:</strong> Participants reported that the AI sometimes “talked too much,”
-            creating an unnatural conversation flow. Long monologues from the AI made them feel like they were waiting
-            for their turn, which contradicted typical human conversational patterns where interruptions or overlaps
-            are common.</li>
-        </ul>
-      </div>
-
-      <div id="section-3-6-2-connecting-you">
-        <h4>3.6.2. Connecting You</h4>
-        <image-component tag="table-2" source="assets/table/t2.jpg" style="max-width: 400px; width: 100%"
+        <div id="section-3-6-2-connecting-you">
+          <h4>3.6.2. Connecting You</h4>
+          <image-component tag="table-2" source="assets/table/t2.jpg" style="max-width: 400px; width: 100%"
           subtitle="Table 2: Quantitative results from Connecting You Experiment"></image-component>
-        <p>
-          In contrast, the Connecting You prototype yielded limited impact. As shown in Table 2, the number of calls
-          remained the same. However, the participant interacted with the iPad nine times, suggesting passive interest
-          in the display.
-        </p>
-        <p>
-          The elderly participant shared that while the status display helped her stay updated on her loved ones’
-          busyness, she still hesitated to call due to a lack of conversation topics, saying she “didn’t know what to
-          talk about besides asking how they are.” The display thus offered emotional reassurance but failed to
-          overcome deeper social hesitation or conversation anxiety.
-        </p>
-        <p>
-          Additionally, loved ones found it tedious to update their availability manually via Google Sheets, often
-          forgetting to change their status after completing tasks. This friction further limited the real-time
-          reliability of the system.
-        </p>
-        <p>
-          However, we acknowledge that the small sample size and short duration limit the generalisability of our
-          findings for Connecting You.
-        </p>
-      </div>
+          <p>
+            In contrast, the Connecting You prototype yielded limited impact. As shown in Table 2, the number of calls
+            remained the same. However, the participant interacted with the iPad nine times, suggesting passive
+            interest in the display.
+          </p>
+          <p>
+            The elderly participant shared that while the status display helped her stay updated on her loved ones’
+            busyness, she still hesitated to call due to a lack of conversation topics, saying she “didn’t know what to
+            talk about besides asking how they are.” The display thus offered emotional reassurance but failed to
+            overcome deeper social hesitation or conversation anxiety.
+          </p>
+          <p>
+            Additionally, loved ones found it tedious to update their availability manually via Google Sheets, often
+            forgetting to change their status after completing tasks. This friction further limited the real-time
+            reliability of the system.
+          </p>
+          <p>
+            However, we acknowledge that the small sample size and short duration limit the generalisability of our
+            findings for Connecting You.
+          </p>
+        </div>
 
-      <div id="section-3-7-refinement-of-concept">
-        <h3>3.7. Refinement of Concept</h3>
-        <p>
-          Findings from the critical function prototyping suggest that Befriender at Your Service holds strong
-          potential in alleviating perceived loneliness among the elderly. Participants appreciated having an
-          always-available companion who responded politely and engaged in conversations on their terms. This
-          constant, non-judgmental presence offered a sense of comfort, agency, and emotional connection.
-        </p>
-        <p>
-          Conversely, the Connecting You concept did not increase the frequency of user-initiated calls. While the
-          live availability display provided some peace of mind by allowing the elderly to stay updated on their loved
-          ones’ busyness, it did not serve as an effective nudge to initiate contact. However, one element of the
-          Connecting You concept, AI-curated activity suggestions, was well-received from our test in the Befriender
-          at Your Service. Participants appreciated learning about nearby events aligned with their interests, given
-          their limited digital literacy, which often prevents them from discovering such opportunities on their own.
-        </p>
-        <p>
-          Based on these insights, we propose merging the two concepts. We will integrate the proactive, personalised
-          event-sharing feature from Connecting You into Befriender at Your Service. The resulting AI companion will
-          not only offer conversational support but also serve as a contextual recommender, nudging users towards
-          meaningful activities in their community.
-        </p>
-        <p>
-          To further refine this concept, we will investigate several key areas in the following semester:
-        </p>
-        <ul>
-          <li><strong>Medium preference:</strong> Identify the most suitable hardware interface (e.g., AR glasses,
-            tablet, TV overlay) for elderly users.</li>
-          <li><strong>Localisation:</strong> Develop a culturally relevant AI that understands and responds naturally
-            to Singlish, local references, and Singaporean conversational norms.</li>
-          <li><strong>Content design:</strong> Discover common conversation topics that resonate with elderly users
-            and determine preferred formats for sharing programme information.</li>
-          <li><strong>Nudging:</strong> Assess the effectiveness of using AI to proactively surface interest-aligned
-            programmes and determine whether such nudges increase the likelihood of participation in social or
-            community activities.</li>
-        </ul>
-      </div>
+        <div id="section-3-7-refinement-of-concept">
+          <h3>3.7. Refinement of Concept</h3>
+          <p>
+            Findings from the critical function prototyping suggest that Befriender at Your Service holds strong
+            potential in alleviating perceived loneliness among the elderly. Participants appreciated having an
+            always-available companion who responded politely and engaged in conversations on their terms. This
+            constant, non-judgmental presence offered a sense of comfort, agency, and emotional connection.
+          </p>
+          <p>
+            Conversely, the Connecting You concept did not increase the frequency of user-initiated calls. While the
+            live availability display provided some peace of mind by allowing the elderly to stay updated on their
+            loved ones’ busyness, it did not serve as an effective nudge to initiate contact. However, one element of
+            the Connecting You concept, AI-curated activity suggestions, was well-received from our test in the
+            Befriender at Your Service. Participants appreciated learning about nearby events aligned with their
+            interests, given their limited digital literacy, which often prevents them from discovering such
+            opportunities on their own.
+          </p>
+          <p>
+            Based on these insights, we propose merging the two concepts. We will integrate the proactive, personalised
+            event-sharing feature from Connecting You into Befriender at Your Service. The resulting AI companion will
+            not only offer conversational support but also serve as a contextual recommender, nudging users towards
+            meaningful activities in their community.
+          </p>
+          <p>
+            To further refine this concept, we will investigate several key areas in the following semester:
+          </p>
+          <ul>
+            <li>Medium preference: Identify the most suitable hardware interface (e.g., AR glasses, tablet, TV overlay)
+              for elderly users. </li>
+            <li>Localisation: Develop a culturally relevant AI that understands and responds naturally to Singlish,
+              local references, and Singaporean conversational norms. </li>
+            <li>Content design: Discover common conversation topics that resonate with elderly users and determine
+              preferred formats for sharing programme information. </li>
+            <li>Nudging: Assess the effectiveness of using AI to proactively surface interest-aligned programmes and
+              determine whether such nudges increase the likelihood of participation in social or community activities.
+            </li>
+          </ul>
+        </div>
 
-      <div id="section-4-tackling-social-isolation">
-        <h2>4. Tackling Social Isolation through Empowering Social Workers</h2>
-      </div>
+        <div id="section-4-tackling-social-isolation">
+          <h2>4. Tackling Social Isolation through Empowering Social Workers</h2>
+        </div>
 
-      <div id="section-4-1-context-and-problem-statement">
-        <h3>4.1. Context and Problem Statement for Social Workers (Maia)</h3>
-        <p>
-          We will now be exploring the social workers' portion of our two-pronged approach.
-        </p>
-      </div>
+        <div id="section-4-1-pretext-and-problem-statement">
+          <h3>4.1. Pretext and Problem Statement for Social Workers (Maia)</h3>
+          <p>
+            We will now be exploring the social workers' portion of our two-pronged approach.
+          </p>
+        </div>
 
-      <div id="section-4-1-1-role-of-social-workers">
-        <h4>4.1.1. Role of Social Workers </h4>
-        <p>
-          According to the National Council of Social Services (NCSS), the role of a social worker is complex as they
-          juggle many responsibilities, such as working with clients to set goals and develop case plans, facilitating
-          access to resources and maintaining and submitting social reports, just to name a few [23].
-        </p>
-        <p>
-          We have broken it down to 3 key client-facing tasks they carry out to provide holistic care to the elderly:
-        </p>
-        <ol>
-          <li>Case work and counselling</li>
-          <li>Advocacy and resource linkage</li>
-          <li>Community development</li>
-        </ol>
-        <p>
-          For case work and counselling, they are required to provide end-to-end case management and support and an
-          appropriate level of care through assessment, care planning and interventions. This step is further broken
-          down [24], with key points such as:
-        </p>
-        <ul>
-          <li>Establish rapport and build professional relationships</li>
-          <li>Identify issues related to the problem and gather relevant information from clients, and conduct needs
-            and intake assessment</li>
-          <li>Provide recommendations to modify case plans</li>
-          <li>Document and maintain case files and prepare reports</li>
-        </ul>
-        <p>
-          For advocacy and resource linkage, they act as middlemen to facilitate the flow of resources from other
-          agencies and tap on community resources to provide intervention support for the clients. Social workers act
-          on behalf of their clients in order to access needed resources, services or to influence policy change,
-          which includes filing case reports. They have to liaise with agencies and make service referrals [25].
-        </p>
-        <p>
-          For community development, social workers are required to design, develop and implement community-specific
-          development programmes after assessing the needs, while also participating in community development
-          initiatives. They have to track outcomes from these initiatives and collect data as well.
-        </p>
-      </div>
+        <div id="section-4-1-1-role-of-social-workers">
+          <h4>4.1.1. Role of Social Workers </h4>
+          <p>
+            According to the National Council of Social Services (NCSS), the role of a social worker is complex as they
+            juggle many responsibilities, such as working with clients to set goals and develop case plans,
+            facilitating access to resources and maintaining and submitting social reports, just to name a few [23].
+          </p>
+          <p>
+            We have broken it down to 3 key client-facing tasks they carry out to provide holistic care to the elderly:
+          </p>
+          <ol>
+            <li>Case work and counselling </li>
+            <li>Advocacy and resource linkage </li>
+            <li>Community development</li>
+          </ol>
+          <p>
+            For case work and counselling, they are required to provide end-to-end case management and support and an
+            appropriate level of care through assessment, care planning and interventions. This step is further broken
+            down [24], with key points such as:
+          </p>
+          <ul>
+            <li>Establish rapport and build professional relationships </li>
+            <li>Identify issues related to the problem and gather relevant information from clients, and conduct needs
+              and intake assessment </li>
+            <li>Provide recommendations to modify case plans </li>
+            <li>Document and maintain case files and prepare reports </li>
+          </ul>
+          <p>
+            For advocacy and resource linkage, they act as middlemen to facilitate the flow of resources from other
+            agencies and tap on community resources to provide intervention support for the clients. Social workers act
+            on behalf of their clients in order to access needed resources, services or to influence policy change,
+            which includes filing case reports. They have to liaise with agencies and make service referrals [25].
+          </p>
+          <p>
+            For community development, social workers are required to design, develop and implement community-specific
+            development programmes after assessing the needs, while also participating in community development
+            initiatives. They have to track outcomes from these initiatives and collect data as well.
+          </p>
+        </div>
 
-      <div id="section-4-1-2-current-gaps-faced">
-        <h4>4.1.2. Current Gaps faced by Social Workers</h4>
-        <p>
-          The scope of their job is incredibly wide, notwithstanding the fact that they usually handle dozens of cases
-          simultaneously. An article published by CNA cites multiple social workers who are incredibly burnt out due
-          to the workload. [26] For example, a crisis by one of the clients may require bringing 3 children to the
-          hospital at 4 am, only for their workday to begin in 5 hours. It would be understandable that an industry
-          veteran would be exhausted when pushed to their limits after several years. The article also talks about the
-          excessive caseload a social worker faces, handling 30 to 50 cases at a given time. They also said: “These
-          ‘excessive’ caseloads ‘directly hurt their ability to do a good job’, as they have less attention to give to
-          each case.”
-        </p>
-        <p>
-          Each client also comes with their various admin tasks, as mentioned in the section on case work above.
-          Social workers are also required to maintain these case files, often having to transcribe meetings with
-          clients, which are incredibly time-consuming and tedious, on top of excessive paperwork. [26] Coupled with
-          the massive number of clients they are required to handle, social workers are often overwhelmed by admin
-          tasks.
-        </p>
-        <p>
-          Thus, the overwhelming workload due to high case load and tedious admin tasks is often cited as the key
-          reason that impedes the ability of social workers to perform their best.
-        </p>
-      </div>
+        <div id="section-4-1-2-current-gaps-faced">
+          <h4>4.1.2. Current Gaps faced by Social Workers</h4>
+          <p>
+            The scope of their job is incredibly wide, notwithstanding the fact that they usually handle dozens of
+            cases simultaneously. An article published by CNA cites multiple social workers who are incredibly burnt
+            out due to the workload [26]. For example, a crisis by one of the clients may require bringing 3 children
+            to the hospital at 4 am, only for their workday to begin in 5 hours. It would be understandable that an
+            industry veteran would be exhausted when pushed to their limits after several years. The article also talks
+            about the excessive caseload a social worker faces, handling 30 to 50 cases at a given time. They also
+            said: “These ‘excessive’ caseloads ‘directly hurt their ability to do a good job’, as they have less
+            attention to give to each case.”
+          </p>
+          <p>
+            Each client also comes with their various admin tasks, as mentioned in the section on case work above.
+            Social workers are also required to maintain these case files, often having to transcribe meetings with
+            clients, which are incredibly time-consuming and tedious, on top of excessive paperwork [26]. Coupled with
+            the massive number of clients they are required to handle, social workers are often overwhelmed by admin
+            tasks.
+          </p>
+          <p>
+            Thus, the overwhelming workload due to high case load and tedious admin tasks is often cited as the key
+            reason that impedes the ability of social workers to perform their best.
+          </p>
+        </div>
 
-      <div id="section-4-1-3-problem-statement-for-social-worker">
-        <h4>4.1.3. Problem Statement for Social Worker</h4>
-        <p>
-          Every week, social workers supporting the 223 Active Ageing Centres (AACs) in Singapore [27] assist
-          numerous different elderly in the neighbourhood with different circumstances and personalities. With so many
-          different personal circumstances, it is often difficult for the staff to provide personalised social
-          assistance to the elderly. As a result, the need for creating personalised approaches significantly
-          increases the complexity of the staff’s job scope, leaving them with less time to support the elderly.
-        </p>
-      </div>
+        <div id="section-4-1-3-problem-statement-for-social-worker">
+          <h4>4.1.3. Problem Statement for Social Worker</h4>
+          <p>
+            Every week, social workers supporting the 223 Active Ageing Centres (AACs) in Singapore assist
+            numerous different elderly in the neighbourhood with different circumstances and personalities [27]. With so
+            many different personal circumstances, it is often difficult for the staff to provide personalised social
+            assistance to the elderly. As a result, the need for creating personalised approaches significantly
+            increases the complexity of the staff’s job scope, leaving them with less time to support the elderly.
+          </p>
+        </div>
 
-      <div id="section-4-2-identifying-needs">
-        <h3>4.2. Identifying Needs and Desired Outcomes of Social Workers (Rex)</h3>
-        <p>
-          In this section, we will first explain how we broke down the job map, followed by how we found the desired
-          outcomes, and lastly, how we developed concepts to address these desired outcomes of social workers using
-          the outcome-driven innovation approach by Anthony Ulwick [28].
-        </p>
-      </div>
+        <div id="section-4-2-identifying-needs">
+          <h3>4.2. Identifying Needs and Desired Outcomes of Social Workers (Rex)</h3>
+          <image-component tag="fig-10" source="assets/figure/f10.png" style="max-width: 200px; width: 100%" subtitle="Figure 10: What customers want by Anthony Ulwick [28]"></image-component>
+          <p>
+            In this section, we will first explain how we broke down the job map, followed by how we found the desired outcomes, 
+            and lastly, how we developed concepts to address these <strong>desired and underserved outcomes</strong> of social workers using the outcome-driven 
+            innovation approach by Anthony Ulwick shown above [28]. 
+          </p>
+        </div>
 
-      <div id="section-4-2-1-job-map">
-        <h4>4.2.1. Job Map and Desired Outcomes of Social Workers</h4>
-        <image-component tag="fig-10" source="assets/figure/f10.png"
-          subtitle="Figure 10: Job Map of a social worker visiting the Elderly"></image-component>
-        <p>
-          Our team mapped out a 12-step job map for social workers doing the job of visiting the elderly. The 5 key
-          steps are highlighted in red in the figure above.
-        </p>
-        <p>
-          From the job map, we identified a total of 36 outcomes [Refer to <a href="#appendix-c">Appendix C</a>].
-          Outcomes are measures of value that define how social workers want to get the job done and what they need to
-          get the job done perfectly [28, p.26].
-        </p>
-        <p>
-          By consulting the social workers, we used the opportunity algorithm of <strong>“Opportunity = Importance +
-            max (importance - satisfaction, 0)”</strong> [28, p.45], and shortlisted the <strong>top 4 most
-            underserved outcomes</strong> for social workers, highlighted in yellow in the table below.
-        </p>
-        <image-component tag="table-3" source="assets/table/t3.png"
-          subtitle="Table 3: Opportunity Scores of Shortlisted Outcomes"></image-component>
-      </div>
+        <div id="section-4-2-1-why-outcome-driven-innovation">
+          <h4>4.2.1. Why the outcome-driven innovation approach.</h4>
+          <p>
+            The methodology was chosen because customer inputs and requirements can be vague. This is addressed by the outcome driven innovation approach (jobs to be done) because outcomes provide us with a set of metrics customers use to judge how well a job is done by a product. These metrics make possible the systematic and predictable creation of products and services [28, p,XXII].
+          </p>
+        </div>
 
-      <div id="section-4-3-concept-exploration">
-        <h3>4.3. Concept Exploration for Underserved Outcomes of Social Workers (Rex)</h3>
-        <p>
-          Based on the <strong>top 4 underserved outcomes</strong>, we identified <strong>opportunities</strong> to
-          help social workers do their jobs better and faster. 4 key concepts were then created.
-        </p>
-      </div>
+        <div id="section-4-2-2-job-map">
+          <h4>4.2.2. Job Map of Social Workers</h4>
+          <image-component tag="fig-11" source="assets/figure/f11.png"
+            subtitle="Figure 11: Job Map of a social worker visiting the Elderly"></image-component>
+          <p>
+            Our team mapped out a 12-step job map for social workers doing the job of visiting the elderly. The 5 key
+            steps are highlighted in red in the figure above.
+          </p>
+          <p>
+            From the job map, we identified a total of 36 outcomes [Refer to <a href="#appendix-c">Appendix C</a>].
+            Outcomes are measures of value that define how social workers want to get the job done and what they need
+            to get the job done perfectly [28, p.26].
+          </p>
+         </div>
 
-      <div id="section-4-3-1-concepts-for-aiding">
-        <h4>4.3.1. Concepts for Aiding Social Workers</h4>
-        <image-component tag="fig-11" source="assets/figure/f11.png"
-          subtitle="Figure 11: 4 Key Concepts for Aiding Social Workers"></image-component>
-        <ol>
-          <li><strong>Fact assistant:</strong> A distraction-free prompter that is able to advise the social worker on
-            topics based on the known historical facts of the elderly.</li>
-          <li><strong>Personal assistant:</strong> An assistant that is able to summarise the important information
-            needed for reports post-interaction.</li>
-          <li><strong>Real-time coach:</strong> A coach that is able to advise the social worker on possible ways to
-            handle elderly people based on known historical behaviours or logged cases.</li>
-          <li><strong>Real-time Duolingo:</strong> A language coach that is able to advise social workers on basic
-            language terminologies and meanings based on their conversations.</li>
-        </ol>
-      </div>
+        <div id="section-4-2-3-filtering-of-outcomes">
+          <h4>4.2.3. Filtering desired outcomes of social workers</h4>
+          <p>
+            In order to filter out the most desired outcomes, we consulted the social workers, and used the opportunity algorithm of <strong>“Opportunity = Importance +
+              max (importance - satisfaction, 0)”</strong> [28, p.45], and shortlisted the <strong>top 4 most
+              underserved outcomes</strong> for social workers, highlighted in yellow in the table below.
+          </p>
+          <p>
+            An outcome with high opportunity score represents an a <strong>solid opportunity and underserved outcome</strong>, because it is something the social workers <strong>want to achieve</strong>, but are <strong>unable to achieve satisfactorily</strong> given the tools currently available to them [28, p.40].
+          </p>
+          <image-component tag="table-3" source="assets/table/t3.png"
+            subtitle="Table 3: Opportunity Scores of Shortlisted Outcomes"></image-component>
+        </div>
 
-      <div id="section-4-3-2-trade-off-analysis">
-        <h4>4.3.2. Trade-off Analysis</h4>
-        <p>
-          In order to decide which concept to prioritise, a trade-off analysis was carried out.
-        </p>
-        <p>
-          4 key categories were chosen as shown in the table below. The bulk of weightage was allocated to the 4
-          underserved outcomes. Reduction of time required to do administrative reports was given a lower weightage
-          because it has the lowest opportunity score among all 4 outcomes, as shown in Table 3 above.
-        </p>
-        <image-component tag="table-4" source="assets/table/t4.png" style="max-width: 800px; width: 100%"
-          subtitle="Table 4: Cross-evaluation Matrix for Concepts"></image-component>
-        <p>
-          For each criterion, a score of 5 was given to the concept which satisfied the criteria most, and 2 for the
-          concept which satisfied the criteria least, as shown in Table 4 above. <strong>Fact Assistant</strong> had
-          the highest overall score.
-        </p>
-      </div>
+        <div id="section-4-3-concept-exploration">
+          <h3>4.3. Concept Exploration for Underserved Outcomes of Social Workers (Rex)</h3>
+          <p>
+            Based on the <strong>top 4 underserved outcomes</strong>, 4 key concepts were then created.
+          </p>
+        </div>
 
-      <div id="section-4-4-critical-experience-prototype">
-        <h3>4.4. Critical Experience Prototype (CEP) (Rex)</h3>
-        <p>
-          Since Fact Assistant had the highest score, our team created a critical experience prototype to test the
-          Fact Assistant. Although the concept is for social workers, we used a befriender to gain quick insights
-          first.
-        </p>
-      </div>
+        <div id="section-4-3-1-concepts-for-aiding">
+          <h4>4.3.1. Concepts for Aiding Social Workers</h4>
+          <image-component tag="fig-12" source="assets/figure/f12.png"
+            subtitle="Figure 12: 4 Key Concepts for Aiding Social Workers"></image-component>
+          <ol>
+            <li><strong>Fact assistant</strong>: A distraction-free prompter that is able to advise the social worker
+              on topics based on the known historical facts of the elderly. </li>
+            <li><strong>Personal assistant</strong>: An assistant that is able to summarise the important information
+              needed for reports post-interaction. </li>
+            <li><strong>Real-time coach</strong>: A coach that is able to advise the social worker on possible ways to
+              handle elderly people based on known historical behaviours or logged cases. </li>
+            <li><strong>Real-time Duolingo</strong>: A language coach that is able to advise social workers on basic
+              language terminologies and meanings based on their conversations.</li>
+          </ol>
+        </div>
 
-      <div id="section-4-4-1-formation-of-cep">
-        <h4>4.4.1. Formation of CEP</h4>
-        <p>
-          <strong>Objective:</strong> The objective was to see if timely facts about the elderly help with
-          conversational flow for a social worker. The test was 20 minutes long.
-        </p>
-        <image-component tag="fig-12" source="assets/figure/f12.png"
-          subtitle="Figure 12: Pictorial Representation of Parties involved in CEP"></image-component>
-        <p><strong>Parties involved:</strong></p>
-        <ol>
-          <li><strong>The AI:</strong> The “AI” provides prompts through text messages, while referring to a fact
-            sheet. He listened to the conversation through earbuds so that he could send factual prompts according to
-            the conversation.</li>
-          <li><strong>The “social worker”:</strong> A befriender who role-played as a social worker. He referred to an
-            iPad for prompts while interacting.</li>
-          <li><strong>The elderly.</strong></li>
-        </ol>
-        <p>
-          An image of the fact sheet used can be found in <a href="#appendix-d">Appendix D</a>.
-        </p>
-        <p>
-          <strong>Post Test:</strong><br>
-          After the test, questionnaires were handed out to the participants.
-        </p>
-      </div>
+        <div id="section-4-3-2-trade-off-analysis">
+          <h4>4.3.2. Trade-off Analysis </h4>
+          <p>
+            In order to decide which concept to prioritise, a trade-off analysis was carried out. Current solutions such as scribe AI, and pen and paper notes were also included to understand how it fares against the proposed concepts. 
+          </p>
+          <p>
+            4 key categories were chosen as shown in the table below. The bulk of weightage was allocated to the 4
+            underserved outcomes. Reduction of time required to do administrative reports was given a lower weightage
+            because it has the lowest opportunity score among all 4 outcomes, as shown in Table 3 above.
+          </p>
+          <image-component tag="table-4" source="assets/table/t4.png" style="max-width: 800px; width: 100%"
+            subtitle="Table 4: Cross-evaluation Matrix for Concepts"></image-component>
+          <p>
+            For each criterion, a score of 5 was given to the concept which satisfied the criteria most, and 2 for the
+            concept which satisfied the criteria least, as shown in Table 4 above. <strong>Fact Assistant</strong> had
+            the highest overall score.
+          </p>
+        </div>
 
-      <div id="section-4-4-2-results-of-cep">
-        <h4>4.4.2. Results of CEP</h4>
-        <image-component tag="table-5" source="assets/table/t5.png" subtitle="Table 5: Key Findings from CEP"
-          style="max-width: 700px; width: 100%"></image-component>
-        <p>
-          The key findings are shown in Table 5 above. In particular, we found that 45% of prompts were converted to
-          actual topics, and 18% led to enjoyable topics that made the elderly smile. This tells us that prompts can
-          help facilitate conversation with the elderly.
-        </p>
-        <p>
-          Furthermore, the “social worker” was able to achieve a talk ratio of 78% elderly, 22% himself, which is
-          close to the benchmark of 70% patient and 30% talk ratio for therapists [29].
-        </p>
-        <image-component tag="table-6" source="assets/table/t6.png"
-          subtitle="Table 6: Prompts that led to enjoyable conversations"></image-component>
-        <p>
-          We also discovered that some prompts the elderly enjoy discussing can revolve around lotteries, as well as
-          their good old memories. These can be seen in Table 6 above. Refer to <a href="#appendix-e">Appendix E</a>
-          for the prompts given.
-        </p>
-      </div>
+        <div id="section-4-4-critical-experience-prototype">
+          <h3>4.4. Critical Experience Prototype (CEP) (Rex)</h3>
+          <p>
+            Since Fact Assistant had the highest score, our team created a critical experience prototype to test the
+            Fact Assistant. Although the concept is for social workers, we used a befriender to gain quick insights
+            first.
+          </p>
+        </div>
 
-      <div id="section-4-4-3-post-cep-questionnaire">
-        <h4>4.4.3. Post CEP Questionnaire Findings</h4>
-        <p>
-          In general, both the “social worker” and the elderly found the conversation smooth.
-        </p>
-        <p>
-          However, the “social worker” did mention that it was difficult to use the prompts in certain situations
-          because he could not link the prompt and the current conversation. Refer to <a href="#appendix-f">Appendix
-            F</a> for the questionnaire results.
-        </p>
-      </div>
+        <div id="section-4-4-1-formation-of-cep">
+          <h4>4.4.1. Formation of CEP </h4>
+          <p>
+            <strong>Objective:</strong> The objective was to see if timely facts about the elderly help with
+            conversational flow for a social worker. The test was 20 minutes long.
+          </p>
+          <image-component tag="fig-13" source="assets/figure/f13.png"
+            subtitle="Figure 13: Pictorial Representation of Parties involved in CEP"></image-component>
+          <p>
+            <strong>Parties involved:</strong>
+          </p>
+          <ol>
+            <li><strong>The AI:</strong> The “AI” provides prompts through text messages, while referring to a fact
+              sheet. He listened to the conversation through earbuds so that he could send factual prompts according
+              to the conversation. </li>
+            <li><strong>The “social worker”:</strong> A befriender who role-played as a social worker. He referred to
+              an iPad for prompts while interacting. </li>
+            <li><strong>The elderly.</strong></li>
+          </ol>
+          <p>
+            An image of the fact sheet used can be found in <a href="#appendix-d">Appendix D</a>.
+          </p>
+          <p>
+            <strong>Post Test:</strong><br>
+            After the test, questionnaires were handed out to the participants.
+          </p>
+        </div>
 
-      <div id="section-4-4-4-conclusion-of-results">
-        <h4>4.4.4. Conclusion of Results</h4>
-        <p>
-          In conclusion, the results are promising and they show us that distraction-free factual prompts can aid the
-          “social worker” in generating topics for the conversation, and could even potentially lead to enjoyable
-          topics. This directly addresses the respective underserved outcomes.
-        </p>
-        <ol>
-          <li>Increase the number of topics that can be talked about with the elderly so that visits are more
-            conversational.</li>
-          <li>Increase the confidence of the social worker when dealing with the elderly</li>
-        </ol>
-      </div>
+        <div id="section-4-4-2-results-of-cep">
+          <h4>4.4.2. Results of CEP </h4>
+          <image-component tag="table-5" source="assets/table/t5.png" subtitle="Table 5: Key Findings from CEP" style="max-width: 700px; width: 100%"></image-component>
+          <p>
+            The key findings are shown in Table 5 above. In particular, we found that 45% of prompts were converted to
+            actual topics, and 18% led to enjoyable topics that made the elderly smile. This tells us that prompts can
+            help facilitate conversation with the elderly.
+          </p>
+          <p>
+            Furthermore, the “social worker” was able to achieve a talk ratio of 78% elderly, 22% himself, which is
+            close to the benchmark of 70% patient and 30% talk ratio for therapists [29].
+          </p>
+          <image-component tag="table-6" source="assets/table/t6.png"
+            subtitle="Table 6: Prompts that led to enjoyable conversations"></image-component>
+          <p>
+            We also discovered that some prompts the elderly enjoy discussing can revolve around lotteries, as well as
+            their good old memories. These can be seen in Table 6 above. Refer to <a href="#appendix-e">Appendix E</a>
+            for the prompts given.
+          </p>
+        </div>
 
-      <div id="section-4-4-5-shortcomings-of-results">
-        <h4>4.4.5. Shortcomings of Results</h4>
-        <p>
-          However, there are some important limitations to note.
-        </p>
-        <ol>
-          <li>Firstly, the sample size tested is too small. We only conducted it on 1 “social worker” and 1 elderly.
-            The small sample size cannot represent the experience of the larger population of elderly and social
-            workers.</li>
-          <li>Secondly, the tester of our CEP is not the same as the user of our product. The users of our product are
-            meant to be social workers in the elderly field.</li>
-          <li>Lastly, although the elderly and the “social worker” are strangers, they know the observer mutually. As
-            a result, the elderly would be less inclined to feel tense because the mutual relationship already helps
-            to establish some form of rapport.</li>
-        </ol>
-      </div>
+        <div id="section-4-4-3-post-cep-questionnaire">
+          <h4>4.4.3. Post CEP Questionnaire Findings </h4>
+          <p>
+            In general, both the “social worker” and the elderly found the conversation smooth.
+          </p>
+          <p>
+            However, the “social worker” did mention that it was difficult to use the prompts in certain situations
+            because he could not link the prompt and the current conversation. Refer to <a href="#appendix-f">Appendix
+              F</a> for the questionnaire results.
+          </p>
+        </div>
 
-      <div id="section-4-5-future-refinement">
-        <h3>4.5. Future Refinement of Concepts for Social Workers (Rex)</h3>
-        <image-component tag="fig-13" source="assets/figure/f13.png"
-          subtitle="Figure 13: Refinement of Concepts"></image-component>
-        <p>
-          To address the downside where the user found it hard to draw connections between the current conversation
-          and the fact, we propose combining the Fact Assistant and Real Time Coach concepts to address this. Since
-          the Fact Assistant only provides the user with the <strong>what</strong>, the Real Time Coach can complement
-          it by providing the <strong>how</strong>, which helps the user to connect the dots.
-        </p>
-      </div>
+        <div id="section-4-4-4-conclusion-of-results">
+          <h4>4.4.4. Conclusion of Results</h4>
+          <p>
+            In conclusion, the results are promising and they show us that distraction-free factual prompts can aid the
+            “social worker” in generating topics for the conversation, and could even potentially lead to enjoyable
+            topics. This directly addresses the respective underserved outcomes.
+          </p>
+          <ol>
+            <li>Increase the number of topics that can be talked about with the elderly so that visits are more
+              conversational. </li>
+            <li>Increase the confidence of the social worker when dealing with the elderly</li>
+          </ol>
+        </div>
 
-      <div id="section-4-6-next-steps">
-        <h3>4.6. Next Steps for Social Workers (Rex)</h3>
-        <p>
-          Our next steps would be to further validate the findings of the Fact Assistant concept by doing the
-          following:
-        </p>
-        <ol>
-          <li>Firstly, to validate our results, we would need to increase our sample size.</li>
-          <li>Secondly, we should now test the Fact Assistant concept on actual social workers. This would give us a
-            more accurate representation.</li>
-          <li>Lastly, to reduce the biasness of our tests, it would be important to test them on strangers.</li>
-        </ol>
-      </div>
+        <div id="section-4-4-5-shortcomings-of-results">
+          <h4>4.4.5. Shortcomings of Results</h4>
+          <p>
+            However, there are some important limitations to note.
+          </p>
+          <ol>
+            <li>Firstly, the sample size tested is too small. We only conducted it on 1 “social worker” and 1 elderly.
+              The small sample size cannot represent the experience of the larger population of elderly and social
+              workers. </li>
+            <li>Secondly, the tester of our CEP is not the same as the user of our product. The users of our product
+              are meant to be social workers in the elderly field. </li>
+            <li>Lastly, although the elderly and the “social worker” are strangers, they know the observer mutually. As
+              a result, the elderly would be less inclined to feel tense because the mutual relationship already helps
+              to establish some form of rapport.</li>
+          </ol>
+        </div>
 
-      <div id="section-5-conclusion">
-        <h2>5. Conclusion (All)</h2>
-        <image-component tag="fig-5-conclusion" source="assets/figure/f5_2.png" style="max-width: 300px; width: 100%"
-          subtitle="Figure 5: Two-pronged Approach"></image-component>
-        <p>
-          In conclusion, our two-pronged approach aims to alleviate the elderly loneliness problem through the elderly
-          and the social workers.
-        </p>
-        <p>
-          Our findings indicate that elderly users are generally receptive to AI companions, particularly when
-          interactions are consistent, empathetic, and easy to access. The AI companion shows strong potential to
-          address the limitations of current befriending models by offering scalable, on-demand emotional support.
-          Thereby alleviating pressure on human volunteers and social infrastructure. A key milestone in the next
-          phase of development will be the creation of a culturally attuned "Singaporean AI" to enhance relatability
-          and user trust.
-        </G>
-        <p>
-          For the social workers, we discovered that real time prompts have the potential to boost social worker
-          interactions with the elderly. It is especially useful when the prompts are relevant to the hobbies or
-          interests of the elderly.
-        </p>
-        <p>
-          Moving forward, more testing and a combination of concepts for both approaches are required to further
-          validate our interim findings.
-        </p>
-      </div>
+        <div id="section-4-5-future-refinement">
+          <h3>4.5. Future Refinement of Concepts for Social Workers (Rex)</h3>
+          <image-component tag="fig-14" source="assets/figure/f14.png"
+            subtitle="Figure 14: Refinement of Concepts"></image-component>
+          <p>
+            To address the downside where the user found it hard to draw connections between the current conversation
+            and the fact, we propose combining the Fact Assistant and Real Time Coach concepts to address this. Since
+            the Fact Assistant only provides the user with the <strong>what</strong>, the Real Time Coach can
+            complement it by providing the <strong>how</strong>, which helps the user to connect the dots.
+          </p>
+        </div>
 
-      <div id="section-6-future-plans">
-        <h2>6. Future Plans for the Project (Rex)</h2>
-        <p>
-          After diving deeper into the concepts of each user group to tackle the central problem of elderly
-          loneliness, our next step is to work on addressing the shortfalls of our two-pronged approach. We will
-          consolidate our findings and align our direction with the Stanford team to develop a solution that addresses
-          a critical need.
-        </p>
-      </div>
+        <div id="section-4-6-next-steps">
+          <h3>4.6. Next Steps for Social Workers (Rex)</h3>
+          <p>
+            Our next steps would be to further validate the findings of the Fact Assistant concept by doing the
+            following:
+          </p>
+          <ol>
+            <li>Firstly, to validate our results, we would need to increase our sample size. </li>
+            <li>Secondly, we should now test the Fact Assistant concept on actual social workers. This would give us a
+              more accurate representation. </li>
+            <li>Lastly, to reduce the biasness of our tests, it would be important to test them on strangers.</li>
+          </ol>
+        </div>
 
-      <div id="section-6-1-project-gantt-chart">
-        <h3>6.1. Project Gantt Chart</h3>
-        <p>
-          Moving forward, our project will be split into 3 main phases
-        </p>
-        <ol>
-          <li>Problem exploration phase</li>
-          <li>Solution exploration phase</li>
-          <li>Functional prototype phase</li>
-        </ol>
-        <p>
-          Our plan for the weeks ahead can be observed in the Gantt chart below.
-        </p>
-        <image-component tag="fig-15" source="assets/figure/f15.png" style="max-width: 900px; width: 100%"
-          subtitle="Figure 15: Project Gantt Chart"></image-component>
-      </div>
+        <div id="section-5-conclusion">
+          <h2>5. Conclusion (All)</h2>
+          <image-component tag="fig-5-conclusion" source="assets/figure/f5_2.png" style="max-width: 300px; width: 100%"
+            subtitle="Figure 5: Two-pronged Approach"></image-component>
+          <p>
+            In conclusion, our two-pronged approach aims to alleviate the elderly loneliness problem through the
+            elderly and the social workers.
+          </p>
+          <p>
+            Our findings indicate that elderly users are generally receptive to AI companions, particularly when
+            interactions are consistent, empathetic, and easy to access. The AI companion shows strong potential to
+            address the limitations of current befriending models by offering scalable, on-demand emotional support.
+            Thereby alleviating pressure on human volunteers and social infrastructure. A key milestone in the next
+            phase of development will be the creation of a culturally attuned "Singaporean AI" to enhance relatability
+            and user trust.
+          </p>
+          <p>
+            For the social workers, we discovered that real time prompts have the potential to boost social worker
+            interactions with the elderly. It is especially useful when the prompts are relevant to the hobbies or
+            interests of the elderly.
+          </D>
+          <p>
+            Moving forward, more testing and a combination of concepts for both approaches are required to further
+            validate our interim findings.
+          </p>
+        </div>
 
-      <div id="references" class="references">
-        <sl-divider></sl-divider>
-        <h2>7. References</h2>
-        <ul>
-          <li>[1] S. Johnson, ‘WHO declares loneliness a “global public health concern”’, The Guardian, The Guardian,
-            16-Nov-2023.</li>
-          <li>[2] Department for Digital, Culture, Media &amp; Sport, ‘Joint message from the UK and Japanese
-            Loneliness Ministers’, GOV.UK, 17-Jun-2021. [Online]. Available:
-            https://www.gov.uk/government/news/joint-message-from-the-uk-and-japanese-loneliness-ministers.
-            [Accessed: 27-Oct-2025].</li>
-          <li>[3] IpsSg and I. Spyouth, Edu.sg, 2024. [Online]. Available:
-            https://lkyspp.nus.edu.sg/docs/default-source/ips/findings-from-sp2024-pre-conference-poll.pdf.
-            [Accessed: 26-Oct-2025].</li>
-          <li>[4] R. Zhaoyang, K. D. Harrington, S. B. Scott, J. E. Graham-Engeland, and M. J. Sliwinski, “Daily
-            social interactions and momentary loneliness: The role of trait loneliness and neuroticism,” The Journals of
-            Gerontology: Series B, vol. 77, no. 10, pp. 1791–1802, Jun. 2022. doi:10.1093/geronb/gbac083</li>
-          <li>[5] M. Puyané, C. Chabrera, E. Camón, and E. Cabrera, “Uncovering the impact of loneliness in ageing
-            populations: A comprehensive scoping review,” BMC Geriatrics, vol. 25, no. 1, Apr. 2025.
-            doi:10.1186/s12877-025-05846-4</li>
-          <li>[6] “Ageing and health,” World Health Organization,
-            https://www.who.int/news-room/fact-sheets/detail/ageing-and-health [accessed Nov. 4, 2025].</li>
-          <li>[7] C. M. Chua, J. Y. Chua, and S. Shorey, “Effectiveness of home-based interventions in improving
-            loneliness and social connectedness among older adults: A systematic review and meta-analysis,” Aging &amp;
-            Mental Health, vol. 28, no. 1, pp. 1–10, Jul. 2023. doi:10.1080/13607863.2023.2237919</li>
-          <li>[8] R. Hacihasanoğlu, A. Yildirim, and P. Karakurt, “Loneliness in elderly individuals, level of
-            dependence in activities of daily living (ADL) and influential factors,” Archives of Gerontology and
-            Geriatrics, vol. 54, no. 1, pp. 61–66, Jan. 2012. doi:10.1016/j.archger.2011.03.011</li>
-          <li>[9] World Health Organization, "Active Ageing: A Policy Framework," Geneva, Switzerland: WHO, 2002.</li>
-          <li>[10] J. Siette et al., "The impact of befriending on social isolation and loneliness: A systematic
-            review," Health & Social Care in the Community, vol. 25, no. 3, pp. 826-848, May 2017. DOI:
-            10.1111/hsc.12361.</li>
-          <li>[11] Agency for Integrated Care, "About the Silver Generation Office," AIC Singapore. [Online].
-            Available: https://www.aic.sg/sgo. [Accessed: Oct. 29, 2025].</li>
-          <li>[12] People's Association, "Engaging Our Seniors," Government of Singapore. [Online]. Available:
-            https://www.pa.gov.sg/our-programmes/community-group-interest/engaging-our-seniors/. [Accessed: Oct. 29,
-            2025].</li>
-          <li>[13] Chin, Soo Fang, and Judith Tan. “The Problem with Being Alone: Social Isolation, Loneliness Biggest
-            Enemy for Seniors in S’pore.” The Straits Times, 2 Dec. 2023,
-            www.straitstimes.com/singapore/all-the-lonely-people-tackling-social-isolation-among-older-singaporeans.
-          </li>
-          <li>[14] Grey, Hannah. “A Guide to Elderly Befriending Services in Singapore.” Homage,
-            www.homage.sg/resources/befrienders/.</li>
-          <li>[15] Lin, Cheryl. “Volunteers Wanted: Charities Face Manpower Crunch While Beneficiaries Increase.” CNA,
-            25 June 2021,
-            www.channelnewsasia.com/singapore/charities-need-more-volunteers-covid-19-more-beneficiaries-2000336.
-          </li>
-          <li>[16] THE MECHANISMS of in SINGAPORE: ELDERLY-BEFRIENDING.</li>
-          <li>[17] Fakoya, Olujoke A., et al. “How Do Befriending Interventions Alleviate Loneliness and Social
-            Isolation among Older People? A Realist Evaluation Study.” PLOS ONE, vol. 16, no. 9, 9 Sept. 2021, p.
-            e0256900, journals.plos.org/plosone/article?id=10.1371/journal.pone.0256900,
-            httpsS://doi.org/10.1371/journal.pone.0256900.</li>
-          <li>[18] K. Al Mazroui and M. Alzyoudi, “The role of ChatGPT in mitigating loneliness among older adults: An
-            exploratory study,” Online Journal of Communication and Media Technologies, vol. 14, no. 4, p. e202444,
-            Oct. 2024, doi: https://doi.org/10.30935/ojcmt/14777.</li>
-          <li>[19] G. Chen and R. Spaulding, “The Impact of AI-Powered Alexa Assistant on Loneliness in Homebound
-            Older Adults: A Pilot Study,” Advances in Geriatric Medicine and Research, vol. 7, no. 1, Mar. 2025, doi:
-            https://doi.org/10.20900/agmr20250003.</li>
-          <li>[20] E. Broadbent et al., “ElliQ, an AI-Driven Social Robot to Alleviate Loneliness: Progress and
-            Lessons Learned,” JAR life, vol. 13, Jan. 2024, doi: https://doi.org/10.14283/jarlife.2024.2.</li>
-          <li>[21] M. M. Hasan, P. Knight, M. H. Tania, A. K. Bitto, A. Das, and H. Punja, “A Novel Framework for
-            Co-designing of An Artificial Intelligence Based Television-enabled Application to Address Social
-            Isolation and Alleviating Loneliness for Older People,” IEEE Xplore, Dec. 01, 2022.
-            https://ieeexplore.ieee.org/document/10029400 [accessed May 19, 2023].</li>
-          <li>[22] “RUNNING A BEFRIENDING SERVICE The Good Practice Guide.” Accessed: Nov. 04, 2025. [Online].
-            Available:
-            https://befriending.co.uk/wp-content/uploads/2024/06/GPG_-Running-a-Befriending-Service-2024.pdf?</li>
-          <li>[23] “Social work,” National Council of Social Service,
-            httpsag://www.ncss.gov.sg/careers/social-service-careers/roles-in-social-services/social-work/ [accessed
-            Nov. 5, 2025].</li>
-          <li>[24] National Social Work Competency Framework,
-            https://ctic.nus.edu.sg/living-well-digitally/national-social-work-competency-framework/ [accessed Nov.
-            12, 2025].</li>
-          <li>[25] “Social work,” National Council of Social Service,
-            https://www.ncss.gov.sg/careers/social-service-careers/roles-in-social-services/social-work/ [accessed
-            Nov. 12, 2025].</li>
-          <li>[26] G. Yeoh, “Back-to-back crises, days that end at 4am: Why some social workers in Singapore are
-            burning out,” CNA,
-            https://www.channelnewsasia.com/singapore/social-workers-burnout-job-hours-passion-2553816 [accessed
-            Nov. 5, 2025].</li>
-          <li>[27] Age Well SG, “ActiveAgeing,” www.agewell.gov.sg. https://www.agewell.sg/active-ageing/</li>
-          <li>[28] A. Ulwick, What Customers Want: Using outcome-driven innovation to create breakthrough products and
-            services. McGraw Hill, 2005.</li>
-          <li>[29] Seedling Mentors, “Essential Listening Tips | Seedling Mentor Program,” Seedlingmentors.org, 2024.
-            https://www.seedlingmentors.org/essential-listening-tips/</li>
-        </ul>
-      </div>
+        <div id="section-6-future-plans">
+          <h2>6. Future Plans for the Project (Rex)</h2>
+          <p>
+            After diving deeper into the concepts of each user group to tackle the central problem of elderly
+            loneliness, our next step is to work on addressing the shortfalls of our two-pronged approach. We will
+            consolidate our findings and align our direction with the Stanford team to develop a solution that
+            addresses a critical need.
+          </p>
+        </div>
 
-      <div id="appendix-a">
-        <sl-divider></sl-divider>
-        <h2>Appendix A</h2>
-        <p>Project prompt </p>
-        <image-component tag="appendix-a-img" source="assets/appendix/AA.jpg"
-          subtitle="Project Prompt"></image-component>
-      </div>
+        <div id="section-6-1-project-gantt-chart">
+          <h3>6.1. Project Gantt Chart</h3>
+          <p>
+            Moving forward, our project will be split into 3 main phases
+          </p>
+          <ol>
+            <li>Problem exploration phase </li>
+            <li>Solution exploration phase </li>
+            <li>Functional prototype phase</li>
+          </ol>
+          <p>
+            Our plan for the weeks ahead can be observed in the Gantt chart below.
+          </p>
+          <image-component tag="fig-15" source="assets/figure/f15.png" style="max-width: 900px; width: 100%"
+            subtitle="Figure 15: Project Gantt Chart"></image-component>
+        </div>
 
-      <div id="appendix-b">
-        <sl-divider></sl-divider>
-        <h2>Appendix B</h2>
-        <p>Observation from Befriender at Your Service Critical Function Prototyping</p>
-        <table-component subtitle="Qualitative Observations">
-          <div id="table-appendix-b"></div>
-        </table-component>
-      </div>
+        <div id="references" class="references">
+          <sl-divider></sl-divider>
+          <h2>7. References</h2>
+          <ul>
+            <li>
+              [1] S. Johnson, ‘WHO declares loneliness a “global public health concern”’, The Guardian, The Guardian,
+              16-Nov-2023.
+            </li>
+            <li>
+              [2] Department for Digital, Culture, Media &amp; Sport, ‘Joint message from the UK and Japanese
+              Loneliness Ministers’, GOV.UK, 17-Jun-2021. [Online]. Available:
+              https://www.gov.uk/government/news/joint-message-from-the-uk-and-japanese-loneliness-ministers.
+              [Accessed: 27-Oct-2025].
+            </li>
+            <li>
+              [3] IpsSg and I. Spyouth, Edu.sg, 2024. [Online]. Available:
+              https://lkyspp.nus.edu.sg/docs/default-source/ips/findings-from-sp2024-pre-conference-poll.pdf.
+              [Accessed: 26-Oct-2025].
+            </li>
+            <li>
+              [4] R. Zhaoyang, K. D. Harrington, S. B. Scott, J. E. Graham-Engeland, and M. J. Sliwinski, “Daily social
+              interactions and momentary loneliness: The role of trait loneliness and neuroticism,” The Journals of
+              Gerontology: Series B, vol. 77, no. 10, pp. 1791–1802, Jun. 2022. doi:10.1093/geronb/gbac083
+            </li>
+            <li>
+              [5] M. Puyané, C. Chabrera, E. Camón, and E. Cabrera, “Uncovering the impact of loneliness in ageing
+              populations: A comprehensive scoping review,” BMC Geriatrics, vol. 25, no. 1, Apr. 2025.
+              doi:10.1186/s12877-025-05846-4
+            </li>
+            <li>
+              [6] “Ageing and health,” World Health Organization,
+              https://www.who.int/news-room/fact-sheets/detail/ageing-and-health [accessed Nov. 4, 2025].
+            </li>
+            <li>
+              [7] C. M. Chua, J. Y. Chua, and S. Shorey, “Effectiveness of home-based interventions in improving
+              loneliness and social connectedness among older adults: A systematic review and meta-analysis,” Aging
+              &amp; Mental Health, vol. 28, no. 1, pp. 1–10, Jul. 2023. doi:10.1080/13607863.2023.2237919
+            </li>
+            <li>
+              [8] R. Hacihasanoğlu, A. Yildirim, and P. Karakurt, “Loneliness in elderly individuals, level of
+              dependence in activities of daily living (ADL) and influential factors,” Archives of Gerontology and
+              Geriatrics, vol. 54, no. 1, pp. 61–66, Jan. 2012. doi:10.1016/j.archger.2011.03.011
+            </li>
+            <li>
+              [9] World Health Organization, "Active Ageing: A Policy Framework," Geneva, Switzerland: WHO, 2002.
+            </li>
+            <li>
+              [10] J. Siette et al., "The impact of befriending on social isolation and loneliness: A systematic
+              review," Health & Social Care in the Community, vol. 25, no. 3, pp. 826-848, May 2017. DOI:
+              10.1111/hsc.12361.
+            </li>
+            <li>
+              [11] Agency for Integrated Care, "About the Silver Generation Office," AIC Singapore. [Online]. Available:
+              https://www.aic.sg/sgo. [Accessed: Oct. 29, 2025].
+            </li>
+            <li>
+              [12] People's Association, "Engaging Our Seniors," Government of Singapore. [Online]. Available:
+              https://www.pa.gov.sg/our-programmes/community-group-interest/engaging-our-seniors/. [Accessed: Oct. 29,
+              2025].
+            </li>
+            <li>
+              [13] Chin, Soo Fang, and Judith Tan. “The Problem with Being Alone: Social Isolation, Loneliness Biggest
+              Enemy for Seniors in S’pore.” The Straits Times, 2 Dec. 2023,
+              www.straitstimes.com/singapore/all-the-lonely-people-tackling-social-isolation-among-older-singaporeans.
+            </li>
+            <li>
+              [14] Grey, Hannah. “A Guide to Elderly Befriending Services in Singapore.” Homage,
+              www.homage.sg/resources/befrienders/.
+            </li>
+            <li>
+              [15] Lin, Cheryl. “Volunteers Wanted: Charities Face Manpower Crunch While Beneficiaries Increase.” CNA,
+              25 June 2021,
+              www.channelnewsasia.com/singapore/charities-need-more-volunteers-covid-19-more-beneficiaries-2000336.
+            </li>
+            <li>
+              [16] THE MECHANISMS of in SINGAPORE: ELDERLY-BEFRIENDING.
+            </li>
+            <li>
+              [17] Fakoya, Olujoke A., et al. “How Do Befriending Interventions Alleviate Loneliness and Social
+              Isolation among Older People? A Realist Evaluation Study.” PLOS ONE, vol. 16, no. 9, 9 Sept. 2021, p.
+              e0256900, journals.plos.org/plosone/article?id=10.1371/journal.pone.0256900,
+              https://doi.org/10.1371/journal.pone.0256900.
+            </li>
+            <li>
+              [18] K. Al Mazroui and M. Alzyoudi, “The role of ChatGPT in mitigating loneliness among older adults: An
+              exploratory study,” Online Journal of Communication and Media Technologies, vol. 14, no. 4, p. e202444,
+              Oct. 2024, doi: https://doi.org/10.30935/ojcmt/14777.
+            </li>
+            <li>
+              [19] G. Chen and R. Spaulding, “The Impact of AI-Powered Alexa Assistant on Loneliness in Homebound Older
+              Adults: A Pilot Study,” Advances in Geriatric Medicine and Research, vol. 7, no. 1, Mar. 2025, doi:
+              https://doi.org/10.20900/agmr20250003.
+            </li>
+            <li>
+              [20] E. Broadbent et al., “ElliQ, an AI-Driven Social Robot to Alleviate Loneliness: Progress and Lessons
+              Learned,” JAR life, vol. 13, Jan. 2024, doi: https://doi.org/10.14283/jarlife.2024.2.
+            </li>
+            <li>
+              [21] M. M. Hasan, P. Knight, M. H. Tania, A. K. Bitto, A. Das, and H. Punja, “A Novel Framework for
+              Co-designing of An Artificial Intelligence Based Television-enabled Application to Address Social
+              Isolation and Alleviating Loneliness for Older People,” IEEE Xplore, Dec. 01, 2022.
+              https://ieeexplore.ieee.org/document/10029400 [accessed May 19, 2023].
+            </li>
+            <li>
+              [22] “RUNNING A BEFRIENDING SERVICE The Good Practice Guide.” Accessed: Nov. 04, 2025. [Online].
+              Available:
+              https://befriending.co.uk/wp-content/uploads/2024/06/GPG_-Running-a-Befriending-Service-2024.pdf?
+            </li>
+            <li>
+              [23] “Social work,” National Council of Social Service,
+              https://www.ncss.gov.sg/careers/social-service-careers/roles-in-social-services/social-work/ [accessed
+              Nov. 5, 2025].
+            </li>
+            <li>
+              [24] National Social Work Competency Framework,
+              https://ctic.nus.edu.sg/living-well-digitally/national-social-work-competency-framework/ [accessed Nov.
+              12, 2025].
+            </li>
+            <li>
+              [25] “Social work,” National Council of Social Service,
+              https://www.ncss.gov.sg/careers/social-service-careers/roles-in-social-services/social-work [accessed
+              Nov. 12, 2025].
+            </li>
+            <li>
+              [26] G. Yeoh, “Back-to-back crises, days that end at 4am: Why some social workers in Singapore are burning
+              out,” CNA,
+              https://www.channelnewsasia.com/singapore/social-workers-burnout-job-hours-passion-2553816 [accessed
+              Nov. 5, 2025].
+            </li>
+            <li>
+              [27]Age Well SG, “ActiveAgeing,” www.agewell.gov.sg. https://www.agewell.sg/active-ageing/
+            </li>
+            <li>
+              [28] A. Ulwick, What Customers Want: Using outcome-driven innovation to create breakthrough products and
+              services. McGraw Hill, 2005.
+            </li>
+            <li>
+              [29] Seedling Mentors, “Essential Listening Tips | Seedling Mentor Program,” Seedlingmentors.org, 2024.
+              https://www.seedlingmentors.org/essential-listening-tips/
+            </li>
+          </ul>
+        </div>
 
-      <div id="appendix-c">
-        <sl-divider></sl-divider>
-        <h2>Appendix C</h2>
-        <p>All outcomes from the job map. Go back to the report <a href="#section-4-2-1-job-map">here</a>. </p>
-        <image-component tag="appendix-c-img1" source="assets/appendix/AC.png" style="max-width: 800px; width: 100%"
-          subtitle="Outcomes from job map (1)"></image-component>
-        <image-component tag="appendix-c-img2" source="assets/appendix/AC_2.png" style="max-width: 800px; width: 100%"
-          subtitle="Outcomes from job map (2)"></image-component>
-      </div>
+        <div id="appendix-a">
+          <sl-divider></sl-divider>
+          <h2>Appendix A</h2>
+          <p>Project prompt </p>
+          <image-component tag="appendix-a-img" source="assets/appendix/AA.jpg"
+            subtitle="Project Prompt"></image-component>
+        </div>
 
-      <div id="appendix-d">
-        <sl-divider></sl-divider>
-        <h2>Appendix D</h2>
-        <p>Fact sheet used for CEP. Go back to the report <a href="#section-4-4-1-formation-of-cep">here</a>.
-        </p>
-        <image-component tag="appendix-d-img" source="assets/appendix/AD.png"
-          subtitle="Fact sheet for CEP"></image-component>
-      </div>
+        <div id="appendix-b">
+          <sl-divider></sl-divider>
+          <h2>Appendix B</h2>
+          <p>Observation from Befriender at Your Service Critical Function Prototyping</p>
 
-      <div id="appendix-e">
-        <sl-divider></sl-divider>
-        <h2>Appendix E</h2>
-        <p>Prompts provided for social worker CEP. Go back to the report <a
-            href="#section-4-4-2-results-of-cep">here</a>.</p>
-        <ol>
-          <li>Prompts provided</li>
-        </ol>
-        <image-component tag="appendix-e-img1" source="assets/appendix/AE.png" style="max-width: 800px; width: 100%"
-          subtitle="Prompts provided"></image-component>
-        <ol start="2">
-          <li>Proportion of time the elderly talked</li>
-        </ol>
-        <image-component tag="appendix-e-img2" source="assets/appendix/AE_2.png" style="max-width: 400px; width: 100%"
-          subtitle="Proportion of talk time"></image-component>
-      </div>
+          <table-component subtitle="Qualitative Observations">
+            <div id="table-appendix-b"></div>
+          </table-component>
 
-      <div id="appendix-f">
-        <sl-divider></sl-divider>
-        <h2>Appendix F</h2>
-        <p>Questionnaire provided to the “Social Worker” and the elderly post CEP. Go back to the report <a
-            href="#section-4-4-3-post-cep-questionnaire">here</a>.</a-img>
-        <p>Questionnaire Results for “Social Worker” on Social Worker CEP </p>
-        <image-component tag="appendix-f-img1" source="assets/appendix/AF.png" style="max-width: 800px; width: 100%"
-          subtitle="Questionnaire Results for “Social Worker” (1)"></image-component>
-        <image-component tag="appendix-f-img2" source="assets/appendix/AF_2.png" style="max-width: 800px; width: 100%"
-          subtitle="Questionnaire Results for “Social Worker” (2)"></image-component>
-        <p>Questionnaire Results for the Elderly on Social Worker CEP </p>
-        <image-component tag="appendix-f-img3" source="assets/appendix/AF_3.png" style="max-width: 800px; width: 100%"
-          subtitle="Questionnaire Results for the Elderly (1)"></image-component>
-        <image-component tag="appendix-f-img4" source="assets/appendix/AF_4.png" style="max-width: 800px; width: 100%"
-          subtitle="Questionnaire Results for the Elderly (2)"></image-component>
-      </div>
+        </div>
 
-      <div id="appendix-g">
-        <sl-divider></sl-divider>
-        <h2>Appendix G</h2>
-        <p>User Persona of the Elderly. Go back to the report <a href="#section-3-2-elderly-needs">here</a>.</p>
-        <table-component subtitle="">
-          <div id="table-needs-statements"></div>
-        </table-component>
-        <!-- <image-component tag="appendix-g-img" source="assets/appendix/AG.png"
-          subtitle="User Persona of the Elderly"></image-component> -->
-      </div>
+        <div id="appendix-c">
+          <sl-divider></sl-divider>
+          <h2>Appendix C</h2>
+          <p>All outcomes from the job map. Go back to the report <a href="#section-4-2-1-job-map">here</a>. </p>
+          <image-component tag="appendix-c-img1" source="assets/appendix/AC.png" style="max-width: 800px; width: 100%"
+            subtitle="Outcomes from job map (1)"></image-component>
+          <image-component tag="appendix-c-img2" source="assets/appendix/AC_2.png" style="max-width: 800px; width: 100%"
+            subtitle="Outcomes from job map (2)"></image-component>
+        </div>
 
-    </div> </div> <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+        <div id="appendix-d">
+          <sl-divider></sl-divider>
+          <h2>Appendix D</h2>
+          <p>Fact sheet used for CEP. Go back to the report <a href="#section-4-4-1-formation-of-cep">here</a>.
+          </p>
+          <image-component tag="appendix-d-img" source="assets/appendix/AD.png"
+            subtitle="Fact sheet for CEP"></image-component>
+        </div>
+
+        <div id="appendix-e">
+          <sl-divider></sl-divider>
+          <h2>Appendix E</h2>
+          <p>Prompts provided for social worker CEP. Go back to the report <a
+              href="#section-4-4-2-results-of-cep">here</a>.</p>
+          <ol>
+            <li>Prompts provided</li>
+          </ol>
+          <image-component tag="appendix-e-img1" source="assets/appendix/AE.png" style="max-width: 800px; width: 100%"
+            subtitle="Prompts provided"></image-component>
+          <ol start="2">
+            <li>Proportion of time the elderly talked</li>
+          </ol>
+          <image-component tag="appendix-e-img2" source="assets/appendix/AE_2.png" style="max-width: 400px; width: 100%"
+            subtitle="Proportion of talk time"></image-component>
+        </div>
+
+        <div id="appendix-f">
+          <sl-divider></sl-divider>
+          <h2>Appendix F</h2>
+          <p>Questionnaire provided to the “Social Worker” and the elderly post CEP. Go back to the report <a
+              href="#section-4-4-3-post-cep-questionnaire">here</a>.</p>
+          <p>Questionnaire Results for “Social Worker” on Social Worker CEP </p>
+          <image-component tag="appendix-f-img1" source="assets/appendix/AF.png" style="max-width: 800px; width: 100%"
+            subtitle="Questionnaire Results for “Social Worker” (1)"></image-component>
+          <image-component tag="appendix-f-img2" source="assets/appendix/AF_2.png" style="max-width: 800px; width: 100%"
+            subtitle="Questionnaire Results for “Social Worker” (2)"></image-component>
+          <p>Questionnaire Results for the Elderly on Social Worker CEP </p>
+          <image-component tag="appendix-f-img3" source="assets/appendix/AF_3.png" style="max-width: 800px; width: 100%"
+            subtitle="Questionnaire Results for the Elderly (1)"></image-component>
+          <image-component tag="appendix-f-img4" source="assets/appendix/AF_4.png" style="max-width: 800px; width: 100%"
+            subtitle="Questionnaire Results for the Elderly (2)"></image-component>
+        </div>
+
+      </div>
+    </div>  
+  </div>
+
+  <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
     <sl-icon name="arrow-up" label="Settings"></sl-icon>
   </sl-button>
 
@@ -1214,13 +1433,14 @@
   <script>
     // Wait for the page to load
     document.addEventListener('DOMContentLoaded', () => {
-
+      
       // Get all the elements we need
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const sidebar = document.querySelector('.sidebar-nav');
       const overlay = document.querySelector('.sidebar-overlay');
       const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
 
+      // --- THIS FUNCTION IS UPDATED ---
       // Function to open/close the sidebar
       function toggleSidebar() {
         sidebar.classList.toggle('open');
